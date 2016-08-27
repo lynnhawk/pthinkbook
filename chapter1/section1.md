@@ -1,3 +1,4 @@
+# 第一节 父工程：Parent
 仅定义pom.xml
 
 里面声明了distributionManagement  和plugins。
@@ -309,6 +310,8 @@
  &lt;\/dependencies&gt;
 
 &lt;\/project&gt;
+
+
 
 
 
