@@ -10,5 +10,21 @@
 
 
 
+整个框架核心部分采用java开发，整个工程采用maven进行管理。主要用到的第三方jar包括：
 
+ICE
+
+apache commons系列
+
+spring
+
+hiberbate（可选）
+
+JFinal（可选）
+
+log4j & logback
+
+c3p0 \/ druid （数据库连接池，可任选，默认druid）
+
+。。。
 
