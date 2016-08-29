@@ -143,103 +143,103 @@ jdbc.testOnBorrow=true
 
 ## 4、配置文件gen.properties
 
-`# base model 所使用的包名`
+\# base model 所使用的包名
 
-`baseModelPackageName=com.pthink.cloudapp.model.base`
+baseModelPackageName=com.pthink.cloudapp.model.base
 
-`#base model 文件保存路径`
+\#base model 文件保存路径
 
-`baseModelOutputDir=./src/com/pthink/cloudapp/model/base`
+baseModelOutputDir=.\/src\/com\/pthink\/cloudapp\/model\/base
 
-`#model 所使用的包名 (MappingKit 默认使用的包名)`
+\#model 所使用的包名 \(MappingKit 默认使用的包名\)
 
-`modelPackageName= com.pthink.cloudapp.model`
+modelPackageName= com.pthink.cloudapp.model
 
-`#model 文件保存路径 (MappingKit 与 DataDictionary 文件默认保存路径)`
+\#model 文件保存路径 \(MappingKit 与 DataDictionary 文件默认保存路径\)
 
-`modelOutputDir=./`
+modelOutputDir=.\/
 
-`#不需要生成的表名，多个表则用,分隔`，`比如a,b,c`
+\#不需要生成的表名，多个表则用,分隔，比如a,b,c
 
-`excludedTable=adv`
+excludedTable=adv
 
-`#是否在 Model 中生成 dao 对象`
+\#是否在 Model 中生成 dao 对象
 
-`generateDaoInModel=true`
+generateDaoInModel=true
 
-`#是否生成字典文件`
+\#是否生成字典文件
 
-`generateDataDictionary=false`
+generateDataDictionary=false
 
-`#需要被移除的表名前缀用于生成modelName。例如表名 "osc_user"，移除前缀 "osc_"后生成的model名为 "User"而非 OscUser，如果有多个表则用,分隔，比如a_,b_,c_`
+\#需要被移除的表名前缀用于生成modelName。例如表名 "osc\_user"，移除前缀 "osc\_"后生成的model名为 "User"而非 OscUser，如果有多个表则用,分隔，比如a\_,b\_,c\_
 
-`tableNamePrefixes=t_`
+tableNamePrefixes=t\_
 
 ## 5、配置文件logback.xml
 
 该文件为logback的配置文件，配置内容如下：
 
-`<?xml version="1.0" encoding="UTF-8"?>`
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 
-`<configuration debug="false">`
+&lt;configuration debug="false"&gt;
 
-`<property name="LOG_HOME" value="./log"/>`
+&lt;property name="LOG\_HOME" value=".\/log"\/&gt;
 
-`<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">`
+&lt;appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender"&gt;
 
-`<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">`
+&lt;encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder"&gt;
 
-`<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n</pattern>`
+&lt;pattern&gt;%d{yyyy-MM-dd HH:mm:ss.SSS} \[%thread\] %-5level %logger{50} - %msg%n&lt;\/pattern&gt;
 
-`</encoder>`
+&lt;\/encoder&gt;
 
-`</appender>`
+&lt;\/appender&gt;
 
-`<appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">`
+&lt;appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender"&gt;
 
-`<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">`
+&lt;rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"&gt;
 
-`<FileNamePattern>${LOG_HOME}/pthinkserver.%d{yyyy-MM-dd}.log</FileNamePattern>`
+&lt;FileNamePattern&gt;${LOG\_HOME}\/pthinkserver.%d{yyyy-MM-dd}.log&lt;\/FileNamePattern&gt;
 
-`<MaxHistory>30</MaxHistory>`
+&lt;MaxHistory&gt;30&lt;\/MaxHistory&gt;
 
-`</rollingPolicy>`
+&lt;\/rollingPolicy&gt;
 
-`<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">`
+&lt;encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder"&gt;
 
-`<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n</pattern>`
+&lt;pattern&gt;%d{yyyy-MM-dd HH:mm:ss.SSS} \[%thread\] %-5level %logger{50} - %msg%n&lt;\/pattern&gt;
 
-`<charset>UTF-8</charset>`
+&lt;charset&gt;UTF-8&lt;\/charset&gt;
 
-`</encoder>`
+&lt;\/encoder&gt;
 
-`<triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">`
+&lt;triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy"&gt;
 
-`<MaxFileSize>1MB</MaxFileSize>`
+&lt;MaxFileSize&gt;1MB&lt;\/MaxFileSize&gt;
 
-`</triggeringPolicy>`
+&lt;\/triggeringPolicy&gt;
 
-`</appender>`
+&lt;\/appender&gt;
 
-`<logger name="org.hibernate" level="ERROR"/>`
+&lt;logger name="org.hibernate" level="ERROR"\/&gt;
 
-`<logger name="java.sql.Connection" level="DEBUG"/>`
+&lt;logger name="java.sql.Connection" level="DEBUG"\/&gt;
 
-`<logger name="java.sql.Statement" level="DEBUG"/>`
+&lt;logger name="java.sql.Statement" level="DEBUG"\/&gt;
 
-`<logger name="java.sql.PreparedStatement" level="DEBUG"/>`
+&lt;logger name="java.sql.PreparedStatement" level="DEBUG"\/&gt;
 
-`<logger name="com.pthink" level="DEBUG"/>`
+&lt;logger name="com.pthink" level="DEBUG"\/&gt;
 
-`<root level="DEBUG">`
+&lt;root level="DEBUG"&gt;
 
-`<appender-ref ref="STDOUT"/>`
+&lt;appender-ref ref="STDOUT"\/&gt;
 
-`<appender-ref ref="FILE"/>`
+&lt;appender-ref ref="FILE"\/&gt;
 
-`</root>`
+&lt;\/root&gt;
 
-`</configuration>`
+&lt;\/configuration&gt;
 
 大部分内容基本不用修改，可以调节的参数为&lt;root &gt; ... &lt;\/root&gt;，生产环境下建议将DEBUG修改为ERROR
 
