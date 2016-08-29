@@ -140,23 +140,37 @@ jdbc.testOnBorrow=true
 
 ## 4、配置文件gen.properties
 
-\#_ base model 所使用的包名_
+`# base model 所使用的包名`
 
-baseModelPackageName=com.pthink.cloudapp.model.base
+`baseModelPackageName=com.pthink.cloudapp.model.base`
 
-baseModelOutputDir=.\/src\/com\/pthink\/cloudapp\/model\/base
+`#base model 文件保存路径`
 
-modelPackageName= com.pthink.cloudapp.model
+`baseModelOutputDir=./src/com/pthink/cloudapp/model/base`
 
-modelOutputDir=.\/
+`#model 所使用的包名 (MappingKit 默认使用的包名)`
 
-excludedTable=adv
+`modelPackageName= com.pthink.cloudapp.model`
 
-generateDaoInModel=true
+`#model 文件保存路径 (MappingKit 与 DataDictionary 文件默认保存路径)`
 
-generateDataDictionary=false
+`modelOutputDir=./`
 
-tableNamePrefixes=t\_
+`#不需要生成的表名`
+
+`excludedTable=adv`
+
+`#是否在 Model 中生成 dao 对象`
+
+`generateDaoInModel=true`
+
+`#是否生成字典文件`
+
+`generateDataDictionary=false`
+
+`#需要被移除的表名前缀用于生成modelName。例如表名 "osc_user"，移除前缀 "osc_"后生成的model名为 "User"而非 OscUser`
+
+`tableNamePrefixes=t_`
 
 ## 5、配置文件logback.xml
 
