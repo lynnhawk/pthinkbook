@@ -140,13 +140,13 @@ jdbc.testOnBorrow=true
 
 ## 4、配置文件gen.properties
 
-\#model config
+\#_ base model 所使用的包名_
 
 baseModelPackageName=com.pthink.cloudapp.model.base
 
 baseModelOutputDir=.\/src\/com\/pthink\/cloudapp\/model\/base
 
-modelPackageName= com.pthink.cloudapp.model 
+modelPackageName= com.pthink.cloudapp.model
 
 modelOutputDir=.\/
 
