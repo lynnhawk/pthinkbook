@@ -3,12 +3,10 @@
     "generator": "site",
     "title": "新鹏程产品开发指导书",
     "description": "新鹏程产品开发指导书API",
-	"author" : "phy",
+    "author" : "phy",
     "extension": null,
-    "github": null,
-    "githubHost": "https://github.com/lynnhawk/pthinkbook.git",
     "plugins": [ 
-				"tbfed-pagefooter",
+				"tbfed-pagefooter","github",
 				"theme-api"  
 	],
     "pluginsConfig": {
@@ -62,6 +60,8 @@
             "all": null
         }
     },
+ "github": { "url": "https://github.com/lynnhawk/pthinkbook.git" },
+
     "pdf": {
         "toc": true,
         "pageNumbers": false,
