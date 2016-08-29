@@ -142,11 +142,11 @@ jdbc.testOnBorrow=true
 
 \#model config
 
-baseModelPackageName=com\/pthink\/cloudapp\/model.base
+baseModelPackageName=com.pthink.cloudapp.model.base
 
 baseModelOutputDir=.\/src\/com\/pthink\/cloudapp\/model\/base
 
-modelPackageName=com\/pthink\/cloudapp\/model
+modelPackageName= com.pthink.cloudapp.model 
 
 modelOutputDir=.\/
 
