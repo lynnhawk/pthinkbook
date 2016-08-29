@@ -10,8 +10,27 @@
 
 修改
 
-```
-aa
+```java
+
+public class _MappingKit {
+
+    public static void mapping(ActiveRecordPlugin arp) {
+        arp.addMapping("CUSTOMERS", "CUSTOMERNUMBER", CUSTOMERS.class);
+        arp.addMapping("EMPLOYEES", "EMPLOYEENUMBER", EMPLOYEES.class);
+        arp.addMapping("OFFICES", "OFFICECODE", OFFICES.class);
+        // Composite Primary Key order: ORDERNUMBER,PRODUCTCODE
+        arp.addMapping("ORDERDETAILS", "ORDERNUMBER,PRODUCTCODE", ORDERDETAILS.class);
+        arp.addMapping("ORDERFACT", ORDERFACT.class);
+        arp.addMapping("ORDERS", "ORDERNUMBER", ORDERS.class);
+        // Composite Primary Key order: CHECKNUMBER,CUSTOMERNUMBER
+        arp.addMapping("PAYMENTS", "CHECKNUMBER,CUSTOMERNUMBER", PAYMENTS.class);
+        arp.addMapping("PRODUCTS", "PRODUCTCODE", PRODUCTS.class);
+        arp.addMapping("QUADRANT_ACTUALS", QuadrantActuals.class);
+        arp.addMapping("TRIAL_BALANCE", TrialBalance.class);
+        arp.addMapping("T_DEPARTMENT", TDepartment.class);
+    }
+}
+
 ```
 
 将不需要的文件或者没有主键的表内容剔除。
