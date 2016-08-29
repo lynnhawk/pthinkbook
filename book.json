@@ -8,7 +8,7 @@
     "github": null,
     "githubHost": "https://github.com/lynnhawk/pthinkbook.git",
     "plugins": [ 
-				"tbfed-pagefooter","autocover",
+				"tbfed-pagefooter",
 				"theme-api"  
 	],
     "pluginsConfig": {
