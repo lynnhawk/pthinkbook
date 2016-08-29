@@ -40,6 +40,8 @@
                 "color": "#09F"
             }
         },
+		"github": { "url": "https://github.com/lynnhawk/pthinkbook.git" 
+		},
 		"tbfed-pagefooter": {
 			"copyright":"Copyright &copy www.pthink.com.cn 2016",
 			"modify_label": "modified: ",
@@ -58,8 +60,6 @@
             "all": null
         }
     },
- "github": { "url": "https://github.com/lynnhawk/pthinkbook.git" },
-
     "pdf": {
         "toc": true,
         "pageNumbers": false,
