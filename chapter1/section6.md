@@ -138,3 +138,29 @@ jdbc.testOnBorrow=true
 
 上述参数一般只需要修改粗体部分的内容即可。
 
+
+
+
+
+## 4.gen.properties
+
+
+
+\#model config
+
+baseModelPackageName=com\/pthink\/cloudapp\/model.base
+
+baseModelOutputDir=.\/src\/com\/pthink\/cloudapp\/model\/base
+
+modelPackageName=com\/pthink\/cloudapp\/model
+
+modelOutputDir=.\/
+
+excludedTable=adv
+
+generateDaoInModel=true
+
+generateDataDictionary=false
+
+tableNamePrefixes=t\_
+
