@@ -20,8 +20,17 @@ logback.xml：log配置
 
 apprun.sh ：linux环境下的测试执行程序
 
-start.sh ：linux环境下的 启动程序 
+start.sh ：linux环境下的 启动程序
 
-stop.sh ：linux环境下的 停止程序 
+stop.sh ：linux环境下的 停止程序
+
+
+
+
+
+
+
+
+
 
 
