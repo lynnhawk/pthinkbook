@@ -26,27 +26,25 @@ stop.sh ：linux环境下的 停止程序
 
 
 
-
+---
 
 ## 1、配置文件app.properties的参数说明
 
-
-
 `#是否打开调试模式`
 
-`app.debug=true   `
+`app.debug=true`
 
 `#数据库类型，可用的参数为oracle 、 sqlserver 、 mysql 、mariadb 四种，注意全部为小写`
 
-`dbtype=mariadb   `
+`dbtype=mariadb`
 
 `#Ice.*为通讯平台的参数，可按实际情况进行调整`
 
-`Ice.MessageSizeMax=10240    `
+`Ice.MessageSizeMax=10240`
 
 `Ice.ThreadPool.Server.Size=50`
 
-`Ice.ThreadPool.Server.SizeMax=100  `
+`Ice.ThreadPool.Server.SizeMax=100`
 
 `# CommunicationFile*  文件传输的相关参数`
 
@@ -82,7 +80,7 @@ stop.sh ：linux环境下的 停止程序
 
 `app.session.timeout=30`
 
-`# 是否启动http server `
+`# 是否启动http server`
 
 `httpserver.start=true`
 
@@ -93,6 +91,4 @@ stop.sh ：linux环境下的 停止程序
 `#是否加载ActiveRecord`
 
 `jfinalActiveRecordPlugin.start=true`
-
-
 
