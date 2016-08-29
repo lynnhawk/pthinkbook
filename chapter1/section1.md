@@ -5,310 +5,312 @@
 里面声明了distributionManagement  和plugins。
 
 xml内容如下：
+```xml
 
-&lt;project xmlns="http:\/\/maven.apache.org\/POM\/4.0.0" xmlns:xsi="http:\/\/www.w3.org\/2001\/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 
-xsi:schemaLocation="http:\/\/maven.apache.org\/POM\/4.0.0 http:\/\/maven.apache.org\/maven-v4\_0\_0.xsd"&gt;
+xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
-&lt;modelVersion&gt;4.0.0&lt;\/modelVersion&gt;
+<modelVersion>4.0.0</modelVersion>
 
-&lt;properties&gt;
+<properties>
 
-&lt;jdk.version&gt;1.7&lt;\/jdk.version&gt;
+<jdk.version>1.7</jdk.version>
 
-&lt;encoding.type&gt;UTF-8&lt;\/encoding.type&gt;
+<encoding.type>UTF-8</encoding.type>
 
-&lt;project.reporting.outputEncoding&gt;UTF-8&lt;\/project.reporting.outputEncoding&gt;
+<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-&lt;project.build.sourceEncoding&gt;UTF-8&lt;\/project.build.sourceEncoding&gt;
+<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-&lt;jquery.version&gt;2.1.1&lt;\/jquery.version&gt;
+<jquery.version>2.1.1</jquery.version>
 
-&lt;bootstrap.version&gt;3.3.0&lt;\/bootstrap.version&gt;
+<bootstrap.version>3.3.0</bootstrap.version>
 
-&lt;bootstrapvalidator.version&gt;0.5.2&lt;\/bootstrapvalidator.version&gt;
+<bootstrapvalidator.version>0.5.2</bootstrapvalidator.version>
 
-&lt;bootstrap-datetimepicker.version&gt;2.3.1&lt;\/bootstrap-datetimepicker.version&gt;
+<bootstrap-datetimepicker.version>2.3.1</bootstrap-datetimepicker.version>
 
-&lt;bootstrap-multiselect.version&gt;0.9.8&lt;\/bootstrap-multiselect.version&gt;
+<bootstrap-multiselect.version>0.9.8</bootstrap-multiselect.version>
 
-&lt;font-awesome.version&gt;4.1.0&lt;\/font-awesome.version&gt;
+<font-awesome.version>4.1.0</font-awesome.version>
 
-&lt;requirejs.version&gt;2.1.14-1&lt;\/requirejs.version&gt;
+<requirejs.version>2.1.14-1</requirejs.version>
 
-&lt;require-css.version&gt;0.1.7&lt;\/require-css.version&gt;
+<require-css.version>0.1.7</require-css.version>
 
-&lt;nprogress.version&gt;0.1.2&lt;\/nprogress.version&gt;
+<nprogress.version>0.1.2</nprogress.version>
 
-&lt;servlet.version&gt;3.1.0&lt;\/servlet.version&gt;
+<servlet.version>3.1.0</servlet.version>
 
-&lt;logback.version&gt;1.1.3&lt;\/logback.version&gt;
+<logback.version>1.1.3</logback.version>
 
-&lt;slf4j.version&gt;1.7.12&lt;\/slf4j.version&gt;
+<slf4j.version>1.7.12</slf4j.version>
 
-&lt;ehcache.version&gt;2.10.0&lt;\/ehcache.version&gt;
+<ehcache.version>2.10.0</ehcache.version>
 
-&lt;spring.version&gt;3.0.5.RELEASE&lt;\/spring.version&gt;
+<spring.version>3.0.5.RELEASE</spring.version>
 
-&lt;ice.version&gt;3.4.2&lt;\/ice.version&gt;
+<ice.version>3.4.2</ice.version>
 
-&lt;testng.version&gt;6.9.10&lt;\/testng.version&gt;
+<testng.version>6.9.10</testng.version>
 
-&lt;mysql.version&gt;5.1.33&lt;\/mysql.version&gt;
+<mysql.version>5.1.33</mysql.version>
 
-&lt;mariadb.version&gt;1.2.3&lt;\/mariadb.version&gt;
+<mariadb.version>1.2.3</mariadb.version>
 
-&lt;oracle.version&gt;10.2.0.5.0&lt;\/oracle.version&gt;
+<oracle.version>10.2.0.5.0</oracle.version>
 
-&lt;jfinal.version&gt;2.2&lt;\/jfinal.version&gt;
+<jfinal.version>2.2</jfinal.version>
 
-&lt;jfinal-dreampie.version&gt;1.2&lt;\/jfinal-dreampie.version&gt;
+<jfinal-dreampie.version>1.2</jfinal-dreampie.version>
 
-&lt;jfinal-web.version&gt;0.2.1&lt;\/jfinal-web.version&gt;
+<jfinal-web.version>0.2.1</jfinal-web.version>
 
-&lt;jfinal-shiro.version&gt;0.2&lt;\/jfinal-shiro.version&gt;
+<jfinal-shiro.version>0.2</jfinal-shiro.version>
 
-&lt;jfinal-shiro-freemarker.version&gt;0.2&lt;\/jfinal-shiro-freemarker.version&gt;
+<jfinal-shiro-freemarker.version>0.2</jfinal-shiro-freemarker.version>
 
-&lt;jfinal-tablebind.version&gt;0.1&lt;\/jfinal-tablebind.version&gt;
+<jfinal-tablebind.version>0.1</jfinal-tablebind.version>
 
-&lt;jfinal-routebind.version&gt;0.1&lt;\/jfinal-routebind.version&gt;
+<jfinal-routebind.version>0.1</jfinal-routebind.version>
 
-&lt;jfinal-sqlinxml.version&gt;0.1&lt;\/jfinal-sqlinxml.version&gt;
+<jfinal-sqlinxml.version>0.1</jfinal-sqlinxml.version>
 
-&lt;jfinal-quartz.version&gt;0.2&lt;\/jfinal-quartz.version&gt;
+<jfinal-quartz.version>0.2</jfinal-quartz.version>
 
-&lt;jfinal-mailer.version&gt;0.2&lt;\/jfinal-mailer.version&gt;
+<jfinal-mailer.version>0.2</jfinal-mailer.version>
 
-&lt;jfinal-utils.version&gt;0.1&lt;\/jfinal-utils.version&gt;
+<jfinal-utils.version>0.1</jfinal-utils.version>
 
-&lt;jfinal-slf4j.version&gt;0.1&lt;\/jfinal-slf4j.version&gt;
+<jfinal-slf4j.version>0.1</jfinal-slf4j.version>
 
-&lt;druid.version&gt;1.0.24&lt;\/druid.version&gt;
+<druid.version>1.0.24</druid.version>
 
-&lt;\/properties&gt;
+</properties>
 
-&lt;groupId&gt;com.pthink.cloudapp&lt;\/groupId&gt;
+<groupId>com.pthink.cloudapp</groupId>
 
-&lt;artifactId&gt;pthink-parent&lt;\/artifactId&gt;
+<artifactId>pthink-parent</artifactId>
 
-&lt;packaging&gt;pom&lt;\/packaging&gt;
+<packaging>pom</packaging>
 
-&lt;version&gt;0.5&lt;\/version&gt;
+<version>0.5</version>
 
-&lt;name&gt;pthink-parent&lt;\/name&gt;
+<name>pthink-parent</name>
 
-&lt;description&gt;AppProject Parent&lt;\/description&gt;
+<description>AppProject Parent</description>
 
-&lt;url&gt;http:\/\/www.pthink.com.cn&lt;\/url&gt;
+<url>http://www.pthink.com.cn</url>
 
-&lt;distributionManagement&gt;
+<distributionManagement>
 
-&lt;repository&gt;
+<repository>
 
-&lt;id&gt;nexus-releases&lt;\/id&gt;
+<id>nexus-releases</id>
 
-&lt;url&gt;http:\/\/www.lynnhawk.com:8081\/repository\/maven-releases&lt;\/url&gt;
+<url>http://www.lynnhawk.com:8081/repository/maven-releases</url>
 
-&lt;\/repository&gt;
+</repository>
 
-&lt;snapshotRepository&gt;
+<snapshotRepository>
 
-&lt;id&gt;nexus-snapshots&lt;\/id&gt;
+<id>nexus-snapshots</id>
 
-&lt;url&gt;http:\/\/www.lynnhawk.com:8081\/repository\/maven-snapshots&lt;\/url&gt;
+<url>http://www.lynnhawk.com:8081/repository/maven-snapshots</url>
 
-&lt;\/snapshotRepository&gt;
+</snapshotRepository>
 
-&lt;\/distributionManagement&gt;
+</distributionManagement>
 
-&lt;build&gt;
+<build>
 
-&lt;finalName&gt;${project.name}&lt;\/finalName&gt;
+<finalName>${project.name}</finalName>
 
-&lt;pluginManagement&gt;
+<pluginManagement>
 
-&lt;plugins&gt;
+<plugins>
 
-&lt;plugin&gt;
+<plugin>
 
-&lt;groupId&gt;org.apache.maven.plugins&lt;\/groupId&gt;
+<groupId>org.apache.maven.plugins</groupId>
 
-&lt;artifactId&gt;maven-compiler-plugin&lt;\/artifactId&gt;
+<artifactId>maven-compiler-plugin</artifactId>
 
-&lt;configuration&gt;
+<configuration>
 
-&lt;encoding&gt;${encoding.type}&lt;\/encoding&gt;
+<encoding>${encoding.type}</encoding>
 
-&lt;source&gt;${jdk.version}&lt;\/source&gt;
+<source>${jdk.version}</source>
 
-&lt;target&gt;${jdk.version}&lt;\/target&gt;
+<target>${jdk.version}</target>
 
-&lt;optimize&gt;false&lt;\/optimize&gt;
+<optimize>false</optimize>
 
-&lt;debug&gt;false&lt;\/debug&gt;
+<debug>false</debug>
 
-&lt;showDeprecation&gt;false&lt;\/showDeprecation&gt;
+<showDeprecation>false</showDeprecation>
 
-&lt;showWarnings&gt;false&lt;\/showWarnings&gt;
+<showWarnings>false</showWarnings>
 
-&lt;compilerArguments&gt;
+<compilerArguments>
 
-&lt;verbose\/&gt;
+<verbose/>
 
-&lt;\/compilerArguments&gt;
+</compilerArguments>
 
-&lt;\/configuration&gt;
+</configuration>
 
-&lt;\/plugin&gt;
+</plugin>
 
-&lt;plugin&gt;
+<plugin>
 
-&lt;groupId&gt;org.apache.maven.plugins&lt;\/groupId&gt;
+<groupId>org.apache.maven.plugins</groupId>
 
-&lt;artifactId&gt;maven-site-plugin&lt;\/artifactId&gt;
+<artifactId>maven-site-plugin</artifactId>
 
-&lt;version&gt;3.5&lt;\/version&gt;
+<version>3.5</version>
 
-&lt;configuration&gt;
+<configuration>
 
-&lt;generateReports&gt;true&lt;\/generateReports&gt;
+<generateReports>true</generateReports>
 
-&lt;inputEncoding&gt;${encoding.type}&lt;\/inputEncoding&gt;
+<inputEncoding>${encoding.type}</inputEncoding>
 
-&lt;outputEncoding&gt;${encoding.type}&lt;\/outputEncoding&gt;
+<outputEncoding>${encoding.type}</outputEncoding>
 
-&lt;\/configuration&gt;
+</configuration>
 
-&lt;\/plugin&gt;
+</plugin>
 
-&lt;plugin&gt;
+<plugin>
 
-&lt;groupId&gt;org.apache.maven.plugins&lt;\/groupId&gt;
+<groupId>org.apache.maven.plugins</groupId>
 
-&lt;artifactId&gt;maven-javadoc-plugin&lt;\/artifactId&gt;
+<artifactId>maven-javadoc-plugin</artifactId>
 
-&lt;version&gt;2.10.1&lt;\/version&gt;
+<version>2.10.1</version>
 
-&lt;configuration&gt;
+<configuration>
 
-&lt;aggregate&gt;true&lt;\/aggregate&gt;
+<aggregate>true</aggregate>
 
-&lt;\/configuration&gt;
+</configuration>
 
-&lt;\/plugin&gt;
+</plugin>
 
-&lt;\/plugins&gt;
+</plugins>
 
-&lt;\/pluginManagement&gt;
+</pluginManagement>
 
-&lt;\/build&gt;
+</build>
 
-&lt;dependencies&gt;
+<dependencies>
 
-&lt;dependency&gt;
+<dependency>
 
-&lt;groupId&gt;com.oracle&lt;\/groupId&gt;
+<groupId>com.oracle</groupId>
 
-&lt;artifactId&gt;ojdbc14&lt;\/artifactId&gt;
+<artifactId>ojdbc14</artifactId>
 
-&lt;version&gt;${oracle.version}&lt;\/version&gt;
+<version>${oracle.version}</version>
 
-&lt;scope&gt;runtime&lt;\/scope&gt;
+<scope>runtime</scope>
 
-&lt;\/dependency&gt;
+</dependency>
 
-&lt;dependency&gt;
+<dependency>
 
-&lt;groupId&gt;mysql&lt;\/groupId&gt;
+<groupId>mysql</groupId>
 
-&lt;artifactId&gt;mysql-connector-java&lt;\/artifactId&gt;
+<artifactId>mysql-connector-java</artifactId>
 
-&lt;version&gt;${mysql.version}&lt;\/version&gt;
+<version>${mysql.version}</version>
 
-&lt;scope&gt;runtime&lt;\/scope&gt;
+<scope>runtime</scope>
 
-&lt;\/dependency&gt;
+</dependency>
 
-&lt;dependency&gt;
+<dependency>
 
-&lt;groupId&gt;org.mariadb.jdbc&lt;\/groupId&gt;
+<groupId>org.mariadb.jdbc</groupId>
 
-&lt;artifactId&gt;mariadb-java-client&lt;\/artifactId&gt;
+<artifactId>mariadb-java-client</artifactId>
 
-&lt;version&gt;${mariadb.version}&lt;\/version&gt;
+<version>${mariadb.version}</version>
 
-&lt;scope&gt;runtime&lt;\/scope&gt;
+<scope>runtime</scope>
 
-&lt;\/dependency&gt;
+</dependency>
 
-&lt;!-- log begin --&gt;
+<!-- log begin -->
 
-&lt;dependency&gt;
+<dependency>
 
-&lt;groupId&gt;ch.qos.logback&lt;\/groupId&gt;
+<groupId>ch.qos.logback</groupId>
 
-&lt;artifactId&gt;logback-classic&lt;\/artifactId&gt;
+<artifactId>logback-classic</artifactId>
 
-&lt;version&gt;${logback.version}&lt;\/version&gt;
+<version>${logback.version}</version>
 
-&lt;\/dependency&gt;
+</dependency>
 
-&lt;dependency&gt;
+<dependency>
 
-&lt;groupId&gt;ch.qos.logback&lt;\/groupId&gt;
+<groupId>ch.qos.logback</groupId>
 
-&lt;artifactId&gt;logback-core&lt;\/artifactId&gt;
+<artifactId>logback-core</artifactId>
 
-&lt;version&gt;${logback.version}&lt;\/version&gt;
+<version>${logback.version}</version>
 
-&lt;\/dependency&gt;
+</dependency>
 
-&lt;dependency&gt;
+<dependency>
 
-&lt;groupId&gt;org.slf4j&lt;\/groupId&gt;
+<groupId>org.slf4j</groupId>
 
-&lt;artifactId&gt;slf4j-log4j12&lt;\/artifactId&gt;
+<artifactId>slf4j-log4j12</artifactId>
 
-&lt;version&gt;${slf4j.version}&lt;\/version&gt;
+<version>${slf4j.version}</version>
 
-&lt;\/dependency&gt;
+</dependency>
 
-&lt;dependency&gt;
+<dependency>
 
-&lt;groupId&gt;org.slf4j&lt;\/groupId&gt;
+<groupId>org.slf4j</groupId>
 
-&lt;artifactId&gt;jcl-over-slf4j&lt;\/artifactId&gt;
+<artifactId>jcl-over-slf4j</artifactId>
 
-&lt;version&gt;${slf4j.version}&lt;\/version&gt;
+<version>${slf4j.version}</version>
 
-&lt;\/dependency&gt;
+</dependency>
 
-&lt;dependency&gt;
+<dependency>
 
-&lt;groupId&gt;org.slf4j&lt;\/groupId&gt;
+<groupId>org.slf4j</groupId>
 
-&lt;artifactId&gt;slf4j-api&lt;\/artifactId&gt;
+<artifactId>slf4j-api</artifactId>
 
-&lt;version&gt;${slf4j.version}&lt;\/version&gt;
+<version>${slf4j.version}</version>
 
-&lt;\/dependency&gt;
+</dependency>
 
-&lt;!-- log end --&gt;
+<!-- log end -->
 
-&lt;dependency&gt;
+<dependency>
 
-&lt;groupId&gt;org.testng&lt;\/groupId&gt;
+<groupId>org.testng</groupId>
 
-&lt;artifactId&gt;testng&lt;\/artifactId&gt;
+<artifactId>testng</artifactId>
 
-&lt;version&gt;${testng.version}&lt;\/version&gt;
+<version>${testng.version}</version>
 
-&lt;scope&gt;test&lt;\/scope&gt;
+<scope>test</scope>
 
-&lt;\/dependency&gt;
+</dependency>
 
-&lt;\/dependencies&gt;
+</dependencies>
 
-&lt;\/project&gt;
+</project>
 
+```
