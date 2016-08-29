@@ -230,11 +230,11 @@ jdbc.testOnBorrow=true
 
 `<root level="DEBUG">`
 
-` <appender-ref ref="STDOUT"/>`
+`<appender-ref ref="STDOUT"/>`
 
-` <appender-ref ref="FILE"/>`
+`<appender-ref ref="FILE"/>`
 
-` </root>`
+`</root>`
 
 `</configuration>`
 
