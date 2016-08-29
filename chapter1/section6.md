@@ -24,8 +24,6 @@ start.sh ：linux环境下的 启动程序
 
 stop.sh ：linux环境下的 停止程序
 
-
-
 ---
 
 ## 1、配置文件app.properties的参数说明
@@ -91,4 +89,56 @@ stop.sh ：linux环境下的 停止程序
 `#是否加载ActiveRecord`
 
 `jfinalActiveRecordPlugin.start=true`
+
+
+
+## 2、  配置文件 applicationContext .xml说明
+
+该文件为spring配置文件，无需修改。
+
+
+
+## 3、配置文件db.properties说明
+
+数据库配置文件
+
+jdbc.initialSize=1
+
+jdbc.maxActive=50
+
+jdbc.maxIdle=10
+
+jdbc.minIdle=1
+
+jdbc.maxWait=5000
+
+jdbc.removeAbandoned=true
+
+jdbc.removeAbandonedTimeout=300000
+
+jdbc.logAbandoned=true
+
+jdbc.testOnBorrow=true
+
+\#数据库JDBC驱动
+
+**jdbc.driverClassName=org.mariadb.jdbc.Driver**
+
+\#JDBC连接串
+
+**jdbc.url=jdbc:mariadb:\/\/IP:Port\/databaseName?characterEncoding=utf8&autoReconnect=true**
+
+\#数据库用户名
+
+**jdbc.username=username**
+
+\#数据库密码
+
+**jdbc.password=password**
+
+**jdbc.validationQuery=select 1**
+
+**hibernate.dialect=org.hibernate.dialect.MySQLDialect**
+
+
 
