@@ -238,5 +238,5 @@ jdbc.testOnBorrow=true
 
 `</configuration>`
 
-大部分内容基本不用修改，可以调节的参数为粗体字部分，生产环境下建议将DEBUG修改为ERROR
+大部分内容基本不用修改，可以调节的参数为&lt;root &gt; ... &lt;\/root&gt;，生产环境下建议将DEBUG修改为ERROR
 
