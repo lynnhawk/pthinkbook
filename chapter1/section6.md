@@ -28,71 +28,67 @@ stop.sh ：linux环境下的 停止程序
 
 ## 1、配置文件app.properties的参数说明
 
+\#是否打开调试模式
 
+app.debug=true
 
+\#数据库类型，可用的参数为oracle 、 sqlserver 、 mysql 、mariadb 四种，注意全部为小写
 
+dbtype=mariadb
 
-`#是否打开调试模式`
+\#Ice.\*为通讯平台的参数，可按实际情况进行调整
 
-`app.debug=true`
+Ice.MessageSizeMax=10240
 
-`#数据库类型，可用的参数为oracle 、 sqlserver 、 mysql 、mariadb 四种，注意全部为小写`
+Ice.ThreadPool.Server.Size=50
 
-`dbtype=mariadb`
+Ice.ThreadPool.Server.SizeMax=100
 
-`#Ice.*为通讯平台的参数，可按实际情况进行调整`
+\# CommunicationFile\*  文件传输的相关参数
 
-`Ice.MessageSizeMax=10240`
+CommunicationFilePath=.\/CommunicationFilePath
 
-`Ice.ThreadPool.Server.Size=50`
+CommunicationFileLimit=32896
 
-`Ice.ThreadPool.Server.SizeMax=100`
+\#服务器的监听名称，客户端调用时需要此参数
 
-`# CommunicationFile*  文件传输的相关参数`
+app.name=PthinkCloudAppListener
 
-`CommunicationFilePath=./CommunicationFilePath`
+\#服务器的监听端口
 
-`CommunicationFileLimit=32896`
+app.port=9701
 
-`#服务器的监听名称，客户端调用时需要此参数`
+\#业务bu所在目录，该目录与 文件 【apprun.\*】中的目录必须保持一致
 
-`app.name=PthinkCloudAppListener`
+app.pluginClasspath=file\:.\/units\/
 
-`#服务器的监听端口`
+\# 业务bu 的自动更新间隔，单位是毫秒，默认3秒
 
-`app.port=9701`
+app.pluginschedulingtime=3000
 
-`#业务bu所在目录，该目录与 文件 【apprun.*】中的目录必须保持一致`
+\#是否保存key，无需修改
 
-`app.pluginClasspath=file\:./units/`
+app.keystore=1
 
-`# 业务bu 的自动更新间隔，单位是毫秒，默认3秒`
+\#是否cluster，无需修改
 
-`app.pluginschedulingtime=3000`
+app.cluster=0
 
-`#是否保存key，无需修改`
+\#session超时，单位为秒
 
-`app.keystore=1`
+app.session.timeout=30
 
-`#是否cluster，无需修改`
+\# 是否启动http server
 
-`app.cluster=0`
+httpserver.start=true
 
-`#session超时，单位为秒`
+\#httpserver端口
 
-`app.session.timeout=30`
+httpserver.port=8801
 
-`# 是否启动http server`
+\#是否加载ActiveRecord
 
-`httpserver.start=true`
-
-`#httpserver端口`
-
-`httpserver.port=8801`
-
-`#是否加载ActiveRecord`
-
-`jfinalActiveRecordPlugin.start=true`
+jfinalActiveRecordPlugin.start=true
 
 ## 2、  配置文件 applicationContext .xml说明
 
