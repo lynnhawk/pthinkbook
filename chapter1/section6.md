@@ -28,17 +28,16 @@ stop.sh ：linux环境下的 停止程序
 
 ## 1、配置文件app.properties的参数说明
 
-\`\`\`java
+```java
 
-\#是否打开调试模式
+#是否打开调试模式
 
 app.debug=true
-
-\#数据库类型，可用的参数为oracle 、 sqlserver 、 mysql 、mariadb 四种，注意全部为小写
+#数据库类型，可用的参数为oracle 、 sqlserver 、 mysql 、mariadb 四种，注意全部为小写
 
 dbtype=mariadb
 
-\#Ice.\*为通讯平台的参数，可按实际情况进行调整
+#Ice.\*为通讯平台的参数，可按实际情况进行调整
 
 Ice.MessageSizeMax=10240
 
@@ -92,7 +91,7 @@ httpserver.port=8801
 
 jfinalActiveRecordPlugin.start=true
 
-\`\`\`
+```
 
 
 
