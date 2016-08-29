@@ -140,10 +140,18 @@ jdbc.password=password
 jdbc.validationQuery=select 1
 
 hibernate.dialect=org.hibernate.dialect.MySQLDialect
+```
 
 上述参数一般只需要修改粗体部分的内容即可。
 
+
+
+
 ## 4、配置文件gen.properties
+
+该文件为自动生成ActiveRecord对象的配置文件，配置内容如下：
+
+```java
 
 # base model 所使用的包名
 
