@@ -3,7 +3,6 @@
     "title": "新鹏程产品开发指导书",
     "description": "新鹏程产品开发指导书API",
     "author" : "phy",
-    "extension": null,
     "plugins": [ 
 				"tbfed-pagefooter","github",
 				"theme-api"  
