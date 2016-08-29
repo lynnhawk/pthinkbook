@@ -90,13 +90,9 @@ stop.sh ：linux环境下的 停止程序
 
 `jfinalActiveRecordPlugin.start=true`
 
-
-
 ## 2、  配置文件 applicationContext .xml说明
 
 该文件为spring配置文件，无需修改。
-
-
 
 ## 3、配置文件db.properties说明
 
@@ -140,5 +136,5 @@ jdbc.testOnBorrow=true
 
 **hibernate.dialect=org.hibernate.dialect.MySQLDialect**
 
-
+上述参数一般只需要修改粗体部分的内容即可。
 
