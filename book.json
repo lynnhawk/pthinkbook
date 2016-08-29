@@ -1,6 +1,5 @@
 {
-    "output": "book_out",
-    "generator": "site",
+    
     "title": "新鹏程产品开发指导书",
     "description": "新鹏程产品开发指导书API",
     "author" : "phy",
