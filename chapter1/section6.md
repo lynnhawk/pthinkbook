@@ -28,11 +28,9 @@ stop.sh ：linux环境下的 停止程序
 
 ## 1、配置文件app.properties的参数说明
 
-\`\`\`java
 
 
 
-\`\`\`
 
 `#是否打开调试模式`
 
