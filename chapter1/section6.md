@@ -100,6 +100,7 @@ jfinalActiveRecordPlugin.start=true
 ## 3、配置文件db.properties说明
 
 数据库配置文件
+
 ```java
 
 jdbc.initialSize=1
@@ -220,5 +221,5 @@ tableNamePrefixes=t_
 
 ```
 
-大部分内容基本不用修改，可以调节的参数为&lt;root &gt; ... &lt;\/root&gt;，生产环境下建议将DEBUG修改为ERROR
+大部分内容基本不用修改，可以调节的参数为&lt;root level="DEBUG"&gt; ... &lt;\/root&gt;，生产环境下建议将DEBUG修改为ERROR
 
