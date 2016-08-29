@@ -176,67 +176,67 @@ jdbc.testOnBorrow=true
 
 该文件为logback的配置文件，配置内容如下：
 
-&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+`<?xml version="1.0" encoding="UTF-8"?>`
 
-&lt;configuration debug="false"&gt;
+`<configuration debug="false">`
 
-&lt;property name="LOG\_HOME" value=".\/log"\/&gt;
+`<property name="LOG_HOME" value="./log"/>`
 
-&lt;appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender"&gt;
+`<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">`
 
-&lt;encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder"&gt;
+`<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">`
 
-&lt;pattern&gt;%d{yyyy-MM-dd HH:mm:ss.SSS} \[%thread\] %-5level %logger{50} - %msg%n&lt;\/pattern&gt;
+`<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n</pattern>`
 
-&lt;\/encoder&gt;
+`</encoder>`
 
-&lt;\/appender&gt;
+`</appender>`
 
-&lt;appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender"&gt;
+`<appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">`
 
-&lt;rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"&gt;
+`<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">`
 
-&lt;FileNamePattern&gt;${LOG\_HOME}\/pthinkserver.%d{yyyy-MM-dd}.log&lt;\/FileNamePattern&gt;
+`<FileNamePattern>${LOG_HOME}/pthinkserver.%d{yyyy-MM-dd}.log</FileNamePattern>`
 
-&lt;MaxHistory&gt;30&lt;\/MaxHistory&gt;
+`<MaxHistory>30</MaxHistory>`
 
-&lt;\/rollingPolicy&gt;
+`</rollingPolicy>`
 
-&lt;encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder"&gt;
+`<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">`
 
-&lt;pattern&gt;%d{yyyy-MM-dd HH:mm:ss.SSS} \[%thread\] %-5level %logger{50} - %msg%n&lt;\/pattern&gt;
+`<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n</pattern>`
 
-&lt;charset&gt;UTF-8&lt;\/charset&gt;
+`<charset>UTF-8</charset>`
 
-&lt;\/encoder&gt;
+`</encoder>`
 
-&lt;triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy"&gt;
+`<triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">`
 
-&lt;MaxFileSize&gt;1MB&lt;\/MaxFileSize&gt;
+`<MaxFileSize>1MB</MaxFileSize>`
 
-&lt;\/triggeringPolicy&gt;
+`</triggeringPolicy>`
 
-&lt;\/appender&gt;
+`</appender>`
 
-&lt;logger name="org.hibernate" level="ERROR"\/&gt;
+`<logger name="org.hibernate" level="ERROR"/>`
 
-&lt;logger name="java.sql.Connection" level="DEBUG"\/&gt;
+`<logger name="java.sql.Connection" level="DEBUG"/>`
 
-&lt;logger name="java.sql.Statement" level="DEBUG"\/&gt;
+`<logger name="java.sql.Statement" level="DEBUG"/>`
 
-&lt;logger name="java.sql.PreparedStatement" level="DEBUG"\/&gt;
+`<logger name="java.sql.PreparedStatement" level="DEBUG"/>`
 
-&lt;logger name="com.pthink" level="DEBUG"\/&gt;
+`<logger name="com.pthink" level="DEBUG"/>`
 
-**&lt;root level="DEBUG"&gt;**
+`<root level="DEBUG">`
 
-** &lt;appender-ref ref="STDOUT"\/&gt;**
+` <appender-ref ref="STDOUT"/>`
 
-** &lt;appender-ref ref="FILE"\/&gt;**
+` <appender-ref ref="FILE"/>`
 
-** &lt;\/root&gt;**
+` </root>`
 
-&lt;\/configuration&gt;
+`</configuration>`
 
 大部分内容基本不用修改，可以调节的参数为粗体字部分，生产环境下建议将DEBUG修改为ERROR
 
