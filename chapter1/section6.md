@@ -100,6 +100,7 @@ jfinalActiveRecordPlugin.start=true
 ## 3、配置文件db.properties说明
 
 数据库配置文件
+```java
 
 jdbc.initialSize=1
 
@@ -119,127 +120,105 @@ jdbc.logAbandoned=true
 
 jdbc.testOnBorrow=true
 
-\#数据库JDBC驱动
+#数据库JDBC驱动
 
-**jdbc.driverClassName=org.mariadb.jdbc.Driver**
+jdbc.driverClassName=org.mariadb.jdbc.Driver
 
-\#JDBC连接串
+#JDBC连接串
 
-**jdbc.url=jdbc:mariadb:\/\/IP:Port\/databaseName?characterEncoding=utf8&autoReconnect=true**
+jdbc.url=jdbc:mariadb://IP:Port/databaseName?characterEncoding=utf8&autoReconnect=true
 
-\#数据库用户名
+#数据库用户名
 
-**jdbc.username=username**
+jdbc.username=username
 
-\#数据库密码
+#数据库密码
 
-**jdbc.password=password**
+jdbc.password=password
 
-**jdbc.validationQuery=select 1**
+jdbc.validationQuery=select 1
 
-**hibernate.dialect=org.hibernate.dialect.MySQLDialect**
+hibernate.dialect=org.hibernate.dialect.MySQLDialect
 
 上述参数一般只需要修改粗体部分的内容即可。
 
 ## 4、配置文件gen.properties
 
-\# base model 所使用的包名
+# base model 所使用的包名
 
 baseModelPackageName=com.pthink.cloudapp.model.base
 
-\#base model 文件保存路径
+#base model 文件保存路径
 
-baseModelOutputDir=.\/src\/com\/pthink\/cloudapp\/model\/base
+baseModelOutputDir=./src/com/pthink/cloudapp/model/base
 
-\#model 所使用的包名 \(MappingKit 默认使用的包名\)
+#model 所使用的包名 (MappingKit 默认使用的包名)
 
 modelPackageName= com.pthink.cloudapp.model
 
-\#model 文件保存路径 \(MappingKit 与 DataDictionary 文件默认保存路径\)
+#model 文件保存路径 (MappingKit 与 DataDictionary 文件默认保存路径)
 
-modelOutputDir=.\/
+modelOutputDir=./
 
-\#不需要生成的表名，多个表则用,分隔，比如a,b,c
+#不需要生成的表名，多个表则用,分隔，比如a,b,c
 
 excludedTable=adv
 
-\#是否在 Model 中生成 dao 对象
+#是否在 Model 中生成 dao 对象
 
 generateDaoInModel=true
 
-\#是否生成字典文件
+#是否生成字典文件
 
 generateDataDictionary=false
 
-\#需要被移除的表名前缀用于生成modelName。例如表名 "osc\_user"，移除前缀 "osc\_"后生成的model名为 "User"而非 OscUser，如果有多个表则用,分隔，比如a\_,b\_,c\_
+#需要被移除的表名前缀用于生成modelName。例如表名 "osc_user"，移除前缀 "osc_"后生成的model名为 "User"而非 OscUser，如果有多个表则用,分隔，比如a_,b_,c_
 
-tableNamePrefixes=t\_
+tableNamePrefixes=t_
+
+```
 
 ## 5、配置文件logback.xml
 
 该文件为logback的配置文件，配置内容如下：
 
-&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+```xml
 
-&lt;configuration debug="false"&gt;
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false">
+    <property name="LOG_HOME" value="./log"/>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <FileNamePattern>${LOG_HOME}/pthinkserver.%d{yyyy-MM-dd}.log</FileNamePattern>
+            <MaxHistory>30</MaxHistory>
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <MaxFileSize>1MB</MaxFileSize>
+        </triggeringPolicy>
+    </appender>
+    <logger name="org.hibernate" level="ERROR"/>
+    <logger name="java.sql.Connection" level="DEBUG"/>
+    <logger name="java.sql.Statement" level="DEBUG"/>
+    <logger name="java.sql.PreparedStatement" level="DEBUG"/>
 
-&lt;property name="LOG\_HOME" value=".\/log"\/&gt;
+    <logger name="com.pthink" level="DEBUG"/>
 
-&lt;appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender"&gt;
+    <root level="DEBUG">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="FILE"/>
+    </root>
+</configuration>
 
-&lt;encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder"&gt;
-
-&lt;pattern&gt;%d{yyyy-MM-dd HH:mm:ss.SSS} \[%thread\] %-5level %logger{50} - %msg%n&lt;\/pattern&gt;
-
-&lt;\/encoder&gt;
-
-&lt;\/appender&gt;
-
-&lt;appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender"&gt;
-
-&lt;rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"&gt;
-
-&lt;FileNamePattern&gt;${LOG\_HOME}\/pthinkserver.%d{yyyy-MM-dd}.log&lt;\/FileNamePattern&gt;
-
-&lt;MaxHistory&gt;30&lt;\/MaxHistory&gt;
-
-&lt;\/rollingPolicy&gt;
-
-&lt;encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder"&gt;
-
-&lt;pattern&gt;%d{yyyy-MM-dd HH:mm:ss.SSS} \[%thread\] %-5level %logger{50} - %msg%n&lt;\/pattern&gt;
-
-&lt;charset&gt;UTF-8&lt;\/charset&gt;
-
-&lt;\/encoder&gt;
-
-&lt;triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy"&gt;
-
-&lt;MaxFileSize&gt;1MB&lt;\/MaxFileSize&gt;
-
-&lt;\/triggeringPolicy&gt;
-
-&lt;\/appender&gt;
-
-&lt;logger name="org.hibernate" level="ERROR"\/&gt;
-
-&lt;logger name="java.sql.Connection" level="DEBUG"\/&gt;
-
-&lt;logger name="java.sql.Statement" level="DEBUG"\/&gt;
-
-&lt;logger name="java.sql.PreparedStatement" level="DEBUG"\/&gt;
-
-&lt;logger name="com.pthink" level="DEBUG"\/&gt;
-
-&lt;root level="DEBUG"&gt;
-
-&lt;appender-ref ref="STDOUT"\/&gt;
-
-&lt;appender-ref ref="FILE"\/&gt;
-
-&lt;\/root&gt;
-
-&lt;\/configuration&gt;
+```
 
 大部分内容基本不用修改，可以调节的参数为&lt;root &gt; ... &lt;\/root&gt;，生产环境下建议将DEBUG修改为ERROR
 
