@@ -28,15 +28,7 @@ stop.sh ：linux环境下的 停止程序
 
 ## 1、配置文件app.properties的参数说明
 
-```
-
-```
-
-
-
-
-
-
+\`\`\`java
 
 \#是否打开调试模式
 
@@ -54,7 +46,7 @@ Ice.ThreadPool.Server.Size=50
 
 Ice.ThreadPool.Server.SizeMax=100
 
-\# CommunicationFile\*  文件传输的相关参数
+\# CommunicationFile\* 文件传输的相关参数
 
 CommunicationFilePath=.\/CommunicationFilePath
 
@@ -99,6 +91,10 @@ httpserver.port=8801
 \#是否加载ActiveRecord
 
 jfinalActiveRecordPlugin.start=true
+
+\`\`\`
+
+
 
 ## 2、  配置文件 applicationContext .xml说明
 
