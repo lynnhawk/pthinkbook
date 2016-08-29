@@ -138,13 +138,7 @@ jdbc.testOnBorrow=true
 
 上述参数一般只需要修改粗体部分的内容即可。
 
-
-
-
-
-## 4.gen.properties
-
-
+## 4、配置文件gen.properties
 
 \#model config
 
@@ -163,4 +157,74 @@ generateDaoInModel=true
 generateDataDictionary=false
 
 tableNamePrefixes=t\_
+
+
+
+## 5、配置文件logback.xml
+
+该文件为logback的配置文件，配置内容如下：
+
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;configuration debug="false"&gt;
+
+ &lt;property name="LOG\_HOME" value=".\/log"\/&gt;
+
+ &lt;appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender"&gt;
+
+ &lt;encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder"&gt;
+
+ &lt;pattern&gt;%d{yyyy-MM-dd HH:mm:ss.SSS} \[%thread\] %-5level %logger{50} - %msg%n&lt;\/pattern&gt;
+
+ &lt;\/encoder&gt;
+
+ &lt;\/appender&gt;
+
+ &lt;appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender"&gt;
+
+ &lt;rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"&gt;
+
+ &lt;FileNamePattern&gt;${LOG\_HOME}\/pthinkserver.%d{yyyy-MM-dd}.log&lt;\/FileNamePattern&gt;
+
+ &lt;MaxHistory&gt;30&lt;\/MaxHistory&gt;
+
+ &lt;\/rollingPolicy&gt;
+
+ &lt;encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder"&gt;
+
+ &lt;pattern&gt;%d{yyyy-MM-dd HH:mm:ss.SSS} \[%thread\] %-5level %logger{50} - %msg%n&lt;\/pattern&gt;
+
+ &lt;charset&gt;UTF-8&lt;\/charset&gt;
+
+ &lt;\/encoder&gt;
+
+ &lt;triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy"&gt;
+
+ &lt;MaxFileSize&gt;1MB&lt;\/MaxFileSize&gt;
+
+ &lt;\/triggeringPolicy&gt;
+
+ &lt;\/appender&gt;
+
+ &lt;logger name="org.hibernate" level="ERROR"\/&gt;
+
+ &lt;logger name="java.sql.Connection" level="DEBUG"\/&gt;
+
+ &lt;logger name="java.sql.Statement" level="DEBUG"\/&gt;
+
+ &lt;logger name="java.sql.PreparedStatement" level="DEBUG"\/&gt;
+
+ &lt;logger name="com.pthink" level="DEBUG"\/&gt;
+
+ **&lt;root level="DEBUG"&gt;**
+
+** &lt;appender-ref ref="STDOUT"\/&gt;**
+
+** &lt;appender-ref ref="FILE"\/&gt;**
+
+** &lt;\/root&gt;**
+
+&lt;\/configuration&gt;
+
+大部分内容基本不用修改，可以调节的参数为粗体字部分
 
