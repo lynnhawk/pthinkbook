@@ -156,7 +156,7 @@ jdbc.testOnBorrow=true
 
 `modelOutputDir=./`
 
-`#不需要生成的表名`
+`#不需要生成的表名，多个表则用,分隔`，`比如a,b,c` 
 
 `excludedTable=adv`
 
@@ -168,7 +168,7 @@ jdbc.testOnBorrow=true
 
 `generateDataDictionary=false`
 
-`#需要被移除的表名前缀用于生成modelName。例如表名 "osc_user"，移除前缀 "osc_"后生成的model名为 "User"而非 OscUser`
+`#需要被移除的表名前缀用于生成modelName。例如表名 "osc_user"，移除前缀 "osc_"后生成的model名为 "User"而非 OscUser，如果有多个表则用,分隔，比如a_,b_,c_` 
 
 `tableNamePrefixes=t_`
 
