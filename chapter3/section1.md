@@ -341,14 +341,18 @@ C）编写展示页面功能
 
 其中由于使用Jquery的 DataTable的原因，数据获取利用ajax方式进行提取。列表头也利用datatable的属性直接自动构建了，另外还翻译了DataTable的相关资源内容，直接展示为中文。
 
-
-
 D）配置server.properties
 
-cccc
-\`\`\`java
+配置文件如下
+```java
+AppName=应用系统名称
+AppDebug=是否处于调试模式
+AppVersion=系统版本
+AppDeveloper=开发者信息#应用服务器配置serverId=应用服务器监听名称
+#设置服务器地址格式是IP:端口:超时（毫秒），如果有多台用“,”分隔servers=127.0.0.2:9701:0,115.159.64.16:9701:0#common packetpacket_default={{},"DATA":{"opttype":"{}","pager":{"pageNo":{},"pageSize":{}},"params":{"entity":{}}}}packet_header="CMD":{"appver":"v1.0","tradeid":"{}","src":"{}","des":"{}","tradecode":"{}","opercode":"{}","workdate":"{}","worktime":"{}"}packet_pager="pager":{"pageNo":{},"pageSize":{}}packet_params="params":{"entity":{}}#functiontemplate#F1000={{},"DATA":{"opttype":"{}","pager":{"pageNo":{},"pageSize":{}},"params":{"entity":{"rq":{},"userid":"{}","username":"{}","userip":"{}"}}}}}F1000={{},"DATA":{"opttype":"{}","pager":{"pageNo":{},"pageSize":{}},"params":{"entity":{"rq":{},"userid":"{}","username":"{}","userip":"{}"}}}}}F1001={{},"DATA":{"opttype":"{}","pager":{"pageNo":{},"pageSize":{}},"params":{"entity":{"rq":{},"userid":"{}","username":"{}","userip":"{}"}}}}}
 
-\`\`\`
+
+```
 ccccc
 
 E）编译发布
