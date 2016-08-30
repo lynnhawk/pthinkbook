@@ -35,23 +35,15 @@ public class _MappingKit {
 
 将不需要的文件或者没有主键的表内容剔除。默认生成的代码，如果表中无主键，则会生成arp.addMapping\("TRIAL\_BALANCE", “”,TrialBalance.class\);  我们需要手工修改该内容变更为： arp.addMapping\("TRIAL\_BALANCE", TrialBalance.class\);
 
-
-
 ## 4、复制代码到工程
 
 将所有映射类的代码加入到 pthink-db的工程中，代码放入pthink-db\src\main\java目录下面即可。
-
-
 
 ## 3、为自动生成的部分数据库类开发相应的DAO操作（可选）
 
 可根据业务需要为相应的类开发一系列业务要求的dao操作类。
 
-
-
 ## 4、编译发布
 
-在IDE环境下执行调用maven的compile、jar、delpoy等命令均可完成；或在命令行环境下执行mvn deploy也可以。
-
-
+在IDE环境下执行调用maven的compile、jar、delpoy等命令均可完成；或在命令行环境下执行mvn deploy也可以。然后将生成的jar文件（在target目录中）复制到运行环境下替换原来的pthink-db\*.jar的文件即可。
 
