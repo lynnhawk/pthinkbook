@@ -2,7 +2,7 @@
 
 如果需要使用让返回信息的字段说明能支持多语言，可以利用后台的多语言服务，将自动把返回报文中字段部分的中文信息自动输出到报文中。当没有找到中文资源时，会直接返回原始英文字段内容，如果匹配到了多个字段翻译，则只会返回第一个匹配的内容。
 
-fields.properties  -- 默认
+## 1、fields.properties  -- 默认
 
 ```java
 T_DEPARTMENT.OFFICECODE=OFFICECODE
@@ -31,7 +31,7 @@ T_DEPARTMENT.BMDM=BMDM
 
 ```
 
-fields.properties -- 英文
+## 2、fields.properties -- 英文
 
 ```java
 
@@ -48,7 +48,7 @@ T_DEPARTMENT.BMDM=BMDM
 
 ```
 
-fields_zh.properties -- 中文
+## 3、fields\_zh.properties -- 中文
 
 ```java
 T_DEPARTMENT.OFFICECODE=部门
