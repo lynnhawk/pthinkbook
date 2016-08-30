@@ -48,7 +48,7 @@ T_DEPARTMENT.BMDM=BMDM
 
 ```
 
-fields\_zh.properties -- 中文
+fields_zh.properties -- 中文
 
 ```java
 T_DEPARTMENT.OFFICECODE=部门
