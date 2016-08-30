@@ -364,7 +364,14 @@ F1001={{},"DATA":{"opttype":"{}","pager":{"pageNo":{},"pageSize":{}},"params":{"
 
 
 ```
-ccccc
+packetpacket_default是完整报文模板
+packet_header是报文头部分模板
+packet_pager是分页区模板
+packet_params是参数区模板
+F***（***为后台已经开发好的功能号数字）是对应功能号的报文模板
+
+
+
 
 E）编译发布
 
