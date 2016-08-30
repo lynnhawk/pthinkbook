@@ -20,6 +20,7 @@
 
 利用npm安装cordova 和 ionic
 ```bash
+
 npm install -g cordova ionic
 
 
