@@ -21,5 +21,5 @@ comment = 业务交易功能详细说明
 createDate = 创建日期，格式为"2016/08/22"   
 ```
 
-
+3、按照父类要求实现atomicTransaction方法
 
