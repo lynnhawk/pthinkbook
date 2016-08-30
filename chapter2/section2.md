@@ -37,6 +37,10 @@ params = {
 ## 3、根据业务要求实现业务方法
 
 ```
-atomicTransaction
+
+```
+
+```
+boolean result = false;String tradeCode = tradeInfo.tradeCode();Logs.log().debug("Begin request, TradeCode[{}], clientIp=[{}]", tradeCode, tradeInfo.getConninfo().getRemoteIp());try {    //this.beginTransaction();    tradeInfo.wrap2First(RFrame.entity);    int reqType = tradeInfo.getInt("rq");    String userid = tradeInfo.getString("userid");    String userName = tradeInfo.getString("username");    String userIP = tradeInfo.getString("userip");    if (Utility.isEmpty(userid)) {        throw new RWarn(RWarn.MSG_99997, "userid不能为空");    }    if (Utility.isEmpty(reqType)) {        throw new RWarn(RWarn.MSG_99997, "reqType不能为空");    }    //<outputs name=defaultout>    tradeInfo.put("r02", userIP);    if (getResult(reqType, tradeInfo)) {        tradeInfo.putReason(RWarn.MSG_00000, "调用成功");    }    //</outputs>    result = true;} catch (RWarn e) {    throw e;} catch (Exception e) {    e.printStackTrace();    Logs.log().error("Failure request, TradeCode[{}] , TradeName [{}], err=[{}]", tradeCode, tradeInfo.getAtomInfo().getTradeName(), e.getCause().getMessage());    throw new RWarn(RWarn.MSG_90010, tradeCode, tradeInfo.getAtomInfo().getTradeName());}Logs.log().debug("Success TradeCode[{}]", tradeCode);return result;
 ```
 
