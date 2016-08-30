@@ -29,7 +29,22 @@ Layout可以选择jgoodies或intellij
 
 ```java
 
-private static JFrame _FrameMain;private static ObjectPrx ICE_Connection = IceTradeUtil.getConnect(ConfigUtil.getInstance().getPropConfig().getStringArray("servers"));public static void main(String[] args) { _FrameMain = new JFrame("GuiDemo"); _FrameMain.setContentPane(new GuiDemo().mainpanel); _FrameMain.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE); _FrameMain.setLocationRelativeTo(null); _FrameMain.setExtendedState(JFrame.MAXIMIZED_BOTH); int width = Toolkit.getDefaultToolkit().getScreenSize().width; //得到当前屏幕分辨率的高 int height = Toolkit.getDefaultToolkit().getScreenSize().height;//得到当前屏幕分辨率的宽 _FrameMain.setSize(width / 2, height / 2);//设置大小 _FrameMain.setLocation((width - _FrameMain.getWidth()) / 2, (height - _FrameMain.getHeight()) / 2); //设置窗体居中显示 _FrameMain.setIconImage(new ImageIcon("app.ico").getImage()); _FrameMain.pack(); _FrameMain.setVisible(true);}
+private static JFrame _FrameMain;
+private static ObjectPrx ICE_Connection = IceTradeUtil.getConnect(ConfigUtil.getInstance().getPropConfig().getStringArray("servers"));
+
+public static void main(String[] args) { 
+_FrameMain = new JFrame("GuiDemo"); 
+_FrameMain.setContentPane(new GuiDemo().mainpanel); 
+_FrameMain.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE); 
+_FrameMain.setLocationRelativeTo(null); 
+_FrameMain.setExtendedState(JFrame.MAXIMIZED_BOTH); 
+int width = Toolkit.getDefaultToolkit().getScreenSize().width; //得到当前屏幕分辨率的高 
+int height = Toolkit.getDefaultToolkit().getScreenSize().height;//得到当前屏幕分辨率的宽 
+_FrameMain.setSize(width / 2, height / 2);//设置大小 
+_FrameMain.setLocation((width - _FrameMain.getWidth()) / 2, (height - _FrameMain.getHeight()) / 2); //设置窗体居中显示 
+_FrameMain.setIconImage(new ImageIcon("app.ico").getImage()); 
+_FrameMain.pack(); 
+_FrameMain.setVisible(true);}
 
 
 
