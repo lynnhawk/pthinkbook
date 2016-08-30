@@ -53,29 +53,30 @@ boolean result = false;
 String tradeCode = tradeInfo.tradeCode();
 Logs.log().debug("Begin request, TradeCode[{}], clientIp=[{}]", tradeCode, tradeInfo.getConninfo().getRemoteIp());
 try {    
-//this.beginTransaction();    
-tradeInfo.wrap2First(RFrame.entity);    
-int reqType = tradeInfo.getInt("rq");    
-String userid = tradeInfo.getString("userid");   
+
+tradeInfo.wrap2First(RFrame.entity);    //提取报文中entity部分的内容到顶层
+int reqType = tradeInfo.getInt("rq");   //获取输入中rq的内容 
+String userid = tradeInfo.getString("userid");    //获取输入中rq的内容
  String userName = tradeInfo.getString("username");    
 String userIP = tradeInfo.getString("userip");    
-if (Utility.isEmpty(userid)) {        
+if (Utility.isEmpty(userid)) {        //对输入字段进行数据校验，有错误则直接调用异常抛出
 throw new RWarn(RWarn.MSG_99997, "userid不能为空");    
 }    
 if (Utility.isEmpty(reqType)) {        
 throw new RWarn(RWarn.MSG_99997, "reqType不能为空");    
 }    
 //<outputs name=defaultout>    
-tradeInfo.put("r02", userIP);    
+tradeInfo.put("r02", userIP);    //构造输出字段
 if (getResult(reqType, tradeInfo)) {        
-tradeInfo.putReason(RWarn.MSG_00000, "调用成功");    
+tradeInfo.putReason(RWarn.MSG_00000, "调用成功");   //返回成功标志 
 }    
 //</outputs>    
 result = true;
-} catch (RWarn e) {    
+} catch (RWarn e) {   //异常处理 
 throw e;
 } catch (Exception e) {    
 e.printStackTrace();    
+//记录日志
 Logs.log().error("Failure request, TradeCode[{}] , TradeName [{}], err=[{}]", tradeCode, tradeInfo.getAtomInfo().getTradeName(), e.getCause().getMessage());    
 throw new RWarn(RWarn.MSG_90010, tradeCode, tradeInfo.getAtomInfo().getTradeName());
 }
