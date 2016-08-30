@@ -33,7 +33,7 @@ public class _MappingKit {
 
 ```
 
-将不需要的文件或者没有主键的表内容剔除。默认生成的代码，如果表中无主键，则会生成arp.addMapping\("TRIAL\_BALANCE", “”,TrialBalance.class\);  我们需要手工修改该内容变更为： arp.addMapping\("TRIAL\_BALANCE", TrialBalance.class\);
+将不需要的文件或者没有主键的表内容剔除。默认生成的代码，如果表中无主键，则会生成arp.addMapping\("TRIAL\_BALANCE", "",TrialBalance.class\);  我们需要手工修改该内容变更为： arp.addMapping\("TRIAL\_BALANCE", TrialBalance.class\);
 
 ## 4、复制代码到工程
 
