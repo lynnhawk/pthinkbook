@@ -295,8 +295,6 @@
 
 ```
 
-
-
 ## 2、完整的系统开发步骤
 
 ### A）利用IDE或maven等类似工具新建一个web应用
@@ -304,7 +302,6 @@
 项目中引用了一个ClientAPI，可以直接通过maven 引入即可。
 
 ```xml
-
 <dependency> 
 <groupId>penghaiyu.cloudapp.client</groupId> 
 <artifactId>clientapi</artifactId> 
@@ -312,6 +309,8 @@
 </dependency>
 
 ```
+
+B）打开工程，编写调用功能
 
 
 
