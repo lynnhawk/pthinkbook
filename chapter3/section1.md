@@ -313,16 +313,20 @@
 B）编写调用功能
 
 aaa
+
 ```java
+String F1000 = ConfigUtil.getInstance(ConfigUtil.ConfigName).getValueFromPropFile("F1000").toString();String s1000 = PacketUtil.format( F1000, PacketUtil.getHeader("1000", "pthink"), "Q", 0, 3, 4, "phy", "penghaiyu", "hello");String result = IceTradeUtil.makeTrade(AppConst.ICE_Connection, "1000", s1000);
 
 
 
 ```
+
 aaa
 
 C）编写展示页面功能
 
 bbbb
+
 ```java
 
 
@@ -334,18 +338,10 @@ bbbb
 D）配置server.properties
 
 cccc
-```java
+\`\`\`java
 
-```
+\`\`\`
 ccccc
 
 E）编译发布
-
-
-
-
-
-
-
-
 
