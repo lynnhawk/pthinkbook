@@ -344,6 +344,7 @@ C）编写展示页面功能
 D）配置server.properties
 
 配置文件如下
+
 ```java
 AppName=应用系统名称
 AppDebug=是否处于调试模式
@@ -353,9 +354,7 @@ AppDeveloper=开发者信息#应用服务器配置serverId=应用服务器监听
 servers=127.0.0.2:9701:0,115.159.64.16:9701:0
 #common 
 packetpacket_default={{},"DATA":{"opttype":"{}","pager":{"pageNo":{},"pageSize":{}},"params":{"entity":{}}}}
-
 packet_header="CMD":{"appver":"v1.0","tradeid":"{}","src":"{}","des":"{}","tradecode":"{}","opercode":"{}","workdate":"{}","worktime":"{}"}
-
 packet_pager="pager":{"pageNo":{},"pageSize":{}}
 packet_params="params":{"entity":{}}
 
@@ -364,14 +363,12 @@ F1001={{},"DATA":{"opttype":"{}","pager":{"pageNo":{},"pageSize":{}},"params":{"
 
 
 ```
-packetpacket_default是完整报文模板
-packet_header是报文头部分模板
-packet_pager是分页区模板
-packet_params是参数区模板
-F***（***为后台已经开发好的功能号数字）是对应功能号的报文模板
 
-
-
+packetpacket\_default是完整报文模板
+packet\_header是报文头部分模板
+packet\_pager是分页区模板
+packet\_params是参数区模板
+F_**（**_为后台已经开发好的功能号数字）是对应功能号的报文模板
 
 E）编译发布
 
