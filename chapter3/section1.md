@@ -327,22 +327,21 @@ result就是后台返回的json数据，详细内容可看开头部分说明。
 类ConfigUtil是用来读取配置文件中的报文模板。
 类PacketUtil是用来处理报文模板与参数，最终构建请求报文。
 类IceTradeUtil是向后台发送请求报文的工具类。
-AppConst.ICE_Connection是一个ICE连接，一个应用只需要创建一个连接实例，如果断开则会自动重连。
-
-
+AppConst.ICE\_Connection是一个ICE连接，一个应用只需要创建一个连接实例，如果断开则会自动重连。
 
 C）编写展示页面功能
 
 范例代码如下
 
 ```javascript
-
 <#include "/common/head_manage.html" /><body class="hold-transition skin-blue sidebar-mini"><div class="wrapper"><#include "/common/manage_top_left.html" /> <!-- Content Wrapper. Contains page content --> <div class="content-wrapper">  <!-- Content Header (Page header) --> <section class="content-header"> <h1> 交易管理 <small>交易明细</small> </h1> <ol class="breadcrumb"> <li><i class="icon-dashboard"></i> 商户管理平台</li> <li>交易管理</li> <li>交易明细</li> </ol> </section>  <!-- Main content --> <section class="content">  <!-- Info boxes --> <div class="row">  <div class="col-md-3 col-sm-6 col-xs-12"> <div class="info-box"> <span class="info-box-icon bg-aqua"><i class="ion glyphicon glyphicon-hdd"></i></span> <div class="info-box-content svr"> <div class="info-box-text"><i class="glyphicon glyphicon-hdd"></i> ${(d.gamename)!''} (ID:${(d.id)!'0'})</div> <div class="info-box-text"><i class="glyphicon glyphicon-map-marker"></i> ${(d.serverip)!'0.0.0.0'}:${(d.serverport)!'0'}</div> <div class="info-box-text"><i class="glyphicon glyphicon-yen"></i> 当日 <span>${(d.amount/100)!'0'}</span> 元</div> </div> </div> </div>  </div>  <!-- /.row --> <!-- Main row --> <div class="row">  <!-- Left col --> <div class="col-md-12"> <div class="box box-primary "> <div class="box-header with-border"> <h3 class="box-title"><i class="icon-list-alt"></i> 交易明细列表</h3> <div class="box-title-right"> <div class="input-group"> <button type="button" class="btn btn-default pull-right" id="daterange-btn"> <span> <i class="icon-calendar"></i> 时间区间选择 </span> <i class="icon-caret-down"></i> </button> </div></div> </div> <!-- /.box-header --> <div class="box-body"> <div class="table-responsive"> <table id="datalist" class="display" cellspacing="0" width="100%"> <thead><tr></tr></thead> </table>  </div> <!-- /.table-responsive -->  </div> <!-- /.box-body 翻页--> <div class="box-footer clearfix">   </div> <!-- /.box-footer -->  </div> <!-- /.box -->  </div> </div> <!-- /.row -->  </section> <!-- /.content -->  </div> <!-- /.content-wrapper --> <#include "/common/foot.html" /> </div><!-- ./wrapper --><script>$(document).ready(function() { var data, tableName= '#datalist', columns, str, jqxhr = $.ajax('${base.getContextPath()}/f1000j') .done(function () { data = JSON.parse(jqxhr.responseText); $.each(data.BODY.columns, function (k, colObj) { str = '<th>' + colObj.title + '</th>'; $(str).appendTo(tableName+'>thead>tr'); }); $(tableName).dataTable({ language: { url: '${base.getContextPath()}/plugins/datatables/chinese.json' }, "data": data.BODY.result, "columns": data.BODY.columns, "fnInitComplete": function () { // Event handler to be fired when rendering is complete (Turn off Loading gif for example) console.log('Datatable rendering complete'); } }); }) .fail(function (jqXHR, exception) { var msg = ''; if (jqXHR.status === 0) { msg = 'Not connect. Verify Network please!'; } else if (jqXHR.status == 404) { msg = 'Requested page not found. [404]'; } else if (jqXHR.status == 500) { msg = 'Internal Server Error [500].'; } else if (exception === 'parsererror') { msg = 'Requested JSON parse failed.'; } else if (exception === 'timeout') { msg = 'Time out error.'; } else if (exception === 'abort') { msg = 'Ajax request aborted.'; } else { msg = 'Uncaught Error.\n' + jqXHR.responseText; } //console.log(msg); });} );</script></body></html>
 
 
 ```
 
-bbbb
+其中由于使用Jquery的 DataTable的原因，数据获取利用ajax方式进行提取。列表头也利用datatable的属性直接自动构建了，另外还翻译了DataTable的相关资源内容，直接展示为中文。
+
+
 
 D）配置server.properties
 
