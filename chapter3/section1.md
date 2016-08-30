@@ -320,10 +320,6 @@ String s1000 = PacketUtil.format(
  F1000, PacketUtil.getHeader("1000", "pthink"), "Q", 0, 3, 4, "phy", "penghaiyu", "hello");
 String result = IceTradeUtil.makeTrade(AppConst.ICE_Connection, "1000", s1000);
 
-
-
-
-
 ```
 
 aaa
