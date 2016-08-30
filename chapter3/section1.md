@@ -305,7 +305,11 @@
 
 ```xml
 
-<dependency> <groupId>penghaiyu.cloudapp.client</groupId> <artifactId>clientapi</artifactId> <version>1.0-SNAPSHOT</version></dependency>
+<dependency> 
+<groupId>penghaiyu.cloudapp.client</groupId> 
+<artifactId>clientapi</artifactId> 
+<version>1.0-SNAPSHOT</version>
+</dependency>
 
 ```
 
