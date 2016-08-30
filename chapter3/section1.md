@@ -357,7 +357,7 @@ packetpacket_default={{},"DATA":{"opttype":"{}","pager":{"pageNo":{},"pageSize":
 packet_header="CMD":{"appver":"v1.0","tradeid":"{}","src":"{}","des":"{}","tradecode":"{}","opercode":"{}","workdate":"{}","worktime":"{}"}
 packet_pager="pager":{"pageNo":{},"pageSize":{}}
 packet_params="params":{"entity":{}}
-
+# Function List
 F1000={{},"DATA":{"opttype":"{}","pager":{"pageNo":{},"pageSize":{}},"params":{"entity":{"rq":{},"userid":"{}","username":"{}","userip":"{}"}}}}}
 F1001={{},"DATA":{"opttype":"{}","pager":{"pageNo":{},"pageSize":{}},"params":{"entity":{"rq":{},"userid":"{}","username":"{}","userip":"{}"}}}}}
 
@@ -368,7 +368,7 @@ packetpacket\_default是完整报文模板
 packet\_header是报文头部分模板
 packet\_pager是分页区模板
 packet\_params是参数区模板
-F_**（**_为后台已经开发好的功能号数字）是对应功能号的报文模板
+F**_（_**为后台已经开发好的功能号数字）是对应功能号的报文模板
 
 E）编译发布
 
