@@ -18,27 +18,19 @@
 
 安装NodeJS （4.x版本即可）
 
-利用npm安装cordova \/ ionic 
-
-
+利用npm安装cordova \/ ionic
 
 ### B、 创建初始工程
 
-ionic start appname  stylename\(tabs\/menu\/blank\)
-
-
+ionic start appname  tabs
 
 ### C、 修改相关js
 
 app.js \/ controllers.js \/ service.js..
-
-
 
 ### D、 编译发布
 
 本地浏览器测试：ionic  serve
 
 android 和iOS均要有相应的模拟器
-
-
 
