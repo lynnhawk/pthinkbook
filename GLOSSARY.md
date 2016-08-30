@@ -12,7 +12,7 @@ Ice 是一种面向对象的中间件平台。从根本上说，这意味着Ice 
 
 # [JFinal](http://www.jfinal.com/)
 
-JFinal 是基于 Java 语言的极速 WEB + ORM 框架，其核心设计目标是开发迅速、代码量少、学习简单、功能强大、轻量级、易扩展、Restful。 
+JFinal 是基于 Java 语言的轻量级 WEB + ORM 框架，我们使用了其ActiveRecord组件来处理数据库操作。
 
 # 
 
