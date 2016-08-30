@@ -84,8 +84,6 @@ Logs.log().debug("Success TradeCode[{}]", tradeCode);
 return result;
 ```
 
-## 
-
 ## 3、编译发布
 
 操作步骤与数据库映射的编译发布雷同。区别只是工程名称和所在目录不同而已。
