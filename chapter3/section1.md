@@ -324,6 +324,12 @@ String result = IceTradeUtil.makeTrade(AppConst.ICE_Connection, "1000", s1000);
 
 result就是后台返回的json数据，详细内容可看开头部分说明。
 
+类ConfigUtil是用来读取配置文件中的报文模板。
+类PacketUtil是用来处理报文模板与参数，最终构建请求报文。
+类IceTradeUtil是向后台发送请求报文的工具类。
+AppConst.ICE_Connection是一个ICE连接，一个应用只需要创建一个连接实例，如果断开则会自动重连。
+
+
 
 C）编写展示页面功能
 
