@@ -84,3 +84,9 @@ Logs.log().debug("Success TradeCode[{}]", tradeCode);
 return result;
 ```
 
+
+
+## 4、编译发布
+
+操作步骤与数据库映射的编译发布雷同。
+
