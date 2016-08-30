@@ -10,5 +10,9 @@ Ice 是一种面向对象的中间件平台。从根本上说，这意味着Ice 
 
 它是基于phonegap 以及angularjs 的移动app html5开发框架，包含了一个轻量的手机UI库，具有速度快，界面现代化、美观等特点。它绑定了AngularJS和Sass，基于Angular语法，简单易学。 这个框架的目的是从web的角度开发手机应用。
 
+# [JFinal](http://www.jfinal.com/)
+
+JFinal 是基于 Java 语言的极速 WEB + ORM 框架，其核心设计目标是开发迅速、代码量少、学习简单、功能强大、轻量级、易扩展、Restful。 
+
 # 
 
