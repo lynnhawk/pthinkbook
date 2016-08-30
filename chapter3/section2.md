@@ -14,15 +14,17 @@
 
 ## 2、 完整的系统开发步骤
 
+安装相关文章网上很多，可以参看[http:\/\/www.runoob.com\/ionic\/ionic-install.html](http://www.runoob.com/ionic/ionic-install.html)
+
 ### A、 准备开发环境
 
-安装NodeJS （4.x版本即可）
+到官网下载安装[NodeJS ](https://nodejs.org/)（4.x版本即可）
 
 利用npm安装cordova 和 ionic
+
 ```bash
 
 npm install -g cordova ionic
-
 
 ```
 
@@ -32,7 +34,7 @@ ionic start appname  tabs
 
 ### C、 修改相关js
 
-app.js 、controllers.js 、/ service.js..
+app.js 、controllers.js 、 service.js..
 
 ### D、 编译发布
 
