@@ -34,7 +34,17 @@ ionic start appname  tabs
 
 ### C、 修改相关js
 
-app.js 、controllers.js 、 service.js..
+#### app.js 
+
+```java
+
+```
+
+#### controllers.js
+
+ 
+#### service.js
+
 
 ### D、 编译发布
 
