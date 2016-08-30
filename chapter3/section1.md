@@ -312,7 +312,7 @@
 
 B）编写调用功能
 
-aaa
+代码范例如下：
 
 ```java
 String F1000 = ConfigUtil.getInstance(ConfigUtil.ConfigName).getValueFromPropFile("F1000").toString();
