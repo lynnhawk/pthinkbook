@@ -10,5 +10,59 @@
 
 页面使用了Jquery 的DataTables控件，列信息与数据信息均来自于返回报文。
 
+该页面调用的功能号为1000，请求报文范例如下：
 
+```java
+
+
+ {
+
+ "CMD": {
+
+ "appver": "v1.0",
+
+ "tradeid": "b0e5265ffbe94e62903207fe29f0baa5",
+
+ "src": "cardclient",
+
+ "des": "cardserver",
+
+ "tradecode": "1000",
+
+ "opercode": "pthink",
+
+ "workdate": "20160812",
+
+ "worktime": "165232"
+
+ },
+
+ "DATA": {
+
+ "params": {
+
+ "entity": {
+
+ "rq": 4,
+
+ "userid": "phy",
+
+ "username": "penghaiyu",
+
+ "userip": "192.168.0.14"
+
+ }
+
+ }
+
+ }
+
+ }
+
+}
+
+
+
+
+```
 
