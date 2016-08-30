@@ -2,8 +2,6 @@
 
 业务组件需要继承com.pthink.cloudapp.standard.abstracts.Atom，就可以被框架自动加载和管理。每个类按照框架要求将输入输出的信息编写相应的注解后就可以自动发布到服务器的http端口供使用者查看。
 
-
-
 ---
 
 范例如下：
@@ -122,4 +120,8 @@ public class F1001 extends Atom {
 }
 
 ```
+
+
+
+详细的代码编写说明请参看 《[如何开发一个新的BU](/chapter2/section2.md)》
 
