@@ -2,7 +2,7 @@
 
 ## 1、范例程序说明
 
-程序采用ionic框架开发，可直接发布到iOS和android平台使用，开发过程中也可以通过浏览器直接进行测试。
+程序采用ionic框架开发，可直接发布到iOS和android平台使用，开发过程中也可以通过浏览器直接进行测试。由于该框架是基于web服务的，所以并没有直接调用ClientAPI，而是调用了之前WebDemo中做好的Http RESTful请求。
 
 界面截图如下：
 
@@ -74,6 +74,7 @@ ionic start appname  tabs
 ```
 
 #### controllers.js
+
 ```JavaScript
 
 
@@ -97,8 +98,8 @@ angular.module('starter.controllers', ['starter.services'])
 
 ```
 
-
 #### service.js
+
 ```JavaScript
 
 
@@ -111,8 +112,6 @@ angular.module('starter.services', ['ngResource']) .factory('Servers', function 
 
 
 ```
-
-
 
 ### D、 编译发布
 
