@@ -322,7 +322,8 @@ String result = IceTradeUtil.makeTrade(AppConst.ICE_Connection, "1000", s1000);
 
 ```
 
-aaa
+result就是后台返回的json数据
+
 
 C）编写展示页面功能
 
