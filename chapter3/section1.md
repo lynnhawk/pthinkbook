@@ -322,7 +322,7 @@ String result = IceTradeUtil.makeTrade(AppConst.ICE_Connection, "1000", s1000);
 
 ```
 
-result就是后台返回的json数据
+result就是后台返回的json数据，详细内容可看开头部分说明。
 
 
 C）编写展示页面功能
