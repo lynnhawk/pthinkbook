@@ -18,6 +18,8 @@ internal =    是否内部使用，true  或false，如果是true则不会被外
 tradeName =  业务交易功能名称，
 author = 开发人员ID
 comment = 业务交易功能详细说明
-createDate = 创建日期，格式为"2016/08/22"
+createDate = 创建日期，格式为"2016/08/22"   
 ```
+
+
 
