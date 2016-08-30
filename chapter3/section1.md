@@ -2,7 +2,7 @@
 
 ## 1、范例程序说明
 
-范例代码下载地址：[http:\/\/222.44.18.140\/svn\/pthink\/product\/PthinkCloudApp\/02.example\/02.client\/ExampleWeb](http://222.44.18.140/svn/pthink/product/PthinkCloudApp/02.example/02.client/ExampleWeb)
+范例程序是基于jfinal的框架开发的，范例代码下载地址：[http:\/\/222.44.18.140\/svn\/pthink\/product\/PthinkCloudApp\/02.example\/02.client\/ExampleWeb](http://222.44.18.140/svn/pthink/product/PthinkCloudApp/02.example/02.client/ExampleWeb)
 
 从配置取得后直接通过maven进行构建即可，可以直接在jetty中测试或发布到tomcat等类似的web Application中测试均可。
 
@@ -333,9 +333,9 @@ AppConst.ICE_Connection是一个ICE连接，一个应用只需要创建一个连
 
 C）编写展示页面功能
 
-bbbb
+范例
 
-```java
+```html
 
 
 
