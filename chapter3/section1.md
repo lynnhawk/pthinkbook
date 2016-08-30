@@ -315,7 +315,11 @@ B）编写调用功能
 aaa
 
 ```java
-String F1000 = ConfigUtil.getInstance(ConfigUtil.ConfigName).getValueFromPropFile("F1000").toString();String s1000 = PacketUtil.format( F1000, PacketUtil.getHeader("1000", "pthink"), "Q", 0, 3, 4, "phy", "penghaiyu", "hello");String result = IceTradeUtil.makeTrade(AppConst.ICE_Connection, "1000", s1000);
+String F1000 = ConfigUtil.getInstance(ConfigUtil.ConfigName).getValueFromPropFile("F1000").toString();
+String s1000 = PacketUtil.format(
+ F1000, PacketUtil.getHeader("1000", "pthink"), "Q", 0, 3, 4, "phy", "penghaiyu", "hello");
+String result = IceTradeUtil.makeTrade(AppConst.ICE_Connection, "1000", s1000);
+
 
 
 
