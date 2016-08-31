@@ -10,8 +10,6 @@
 
 也引入了ClientAPI。工程创建方式基本雷同，但是pom.xml当中引入了更多的UI控件，便于编译和运行。
 
-
-
 ## 2、系统开发步骤
 
 ### A、新建一个工程
@@ -21,6 +19,7 @@
 Layout可以选择jgoodies或intellij
 
 ### C、为Form加入需要的UI组件
+
 修改主panel的名字为mainpanel
 
 ### D、为控件加入相应事件
@@ -28,7 +27,6 @@ Layout可以选择jgoodies或intellij
 ### E、为main方法加入执行方法
 
 ```java
-
 private static JFrame _FrameMain;
 private static ObjectPrx ICE_Connection = IceTradeUtil.getConnect(ConfigUtil.getInstance().getPropConfig().getStringArray("servers"));
 
@@ -46,17 +44,5 @@ _FrameMain.setIconImage(new ImageIcon("app.ico").getImage());
 _FrameMain.pack(); 
 _FrameMain.setVisible(true);}
 
-
-
 ```
-
-
-
-
-
-
-
-
-
-
 
