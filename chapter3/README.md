@@ -25,6 +25,7 @@ npm install  gitbook  gulp gulp-gh-pages
 ```
 
 然后再执行
+
 ```bash
 
 gulp publish
@@ -33,5 +34,5 @@ gulp publish
 
 ```
 
-
+执行完毕后，就可以在github网站上看到最新编写的文档了。网址是：[https:\/\/lynnhawk.github.io\/pthinkbook\/index.html](https://lynnhawk.github.io/pthinkbook/index.html)
 
