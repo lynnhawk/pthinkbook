@@ -68,7 +68,7 @@ app.pluginClasspath=file:./units/
 app.pluginschedulingtime=3000
 #多语言资源文件名
 app.fieldFilename=fields
-#默认语言环境，在输出报文时会根据此处内容自动调整columns部分titile的值
+#默认语言环境，在输出报文时会根据此处内容自动调整columns部分titile和cn的值
 app.defaultLocale=zh
 
 #是否保存key，无需修改
