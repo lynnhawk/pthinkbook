@@ -2,7 +2,7 @@
 
 ## 1、范例程序说明
 
-这个GUI程序是一个最简单的单界面程序，里面使用了jgoodies的Layout 、swing的JTable、IntelliJ的JForm。
+这个GUI程序是一个最简单的单界面程序，里面使用了jgoodies的Layout 、swing的JTable、IntelliJ的JForm。代码下载地址： [http:\/\/222.44.18.140\/svn\/pthink\/product\/PthinkCloudApp\/02.example\/02.client\/ExampleApplication](http://222.44.18.140/svn/pthink/product/PthinkCloudApp/02.example/02.client/ExampleApplication) 
 
 界面如下：
 
