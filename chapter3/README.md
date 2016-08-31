@@ -14,7 +14,15 @@
 
 5、安装svn客户端
 
-6、如果要加入gitbook的在线书写团队，请安装git客户端，并注册github和gitbook的账号
+6、如果要加入gitbook的在线书写团队，请安装git客户端，并注册github和gitbook的账号，然后在本地环境下安装gitbook工具。
+
+```bash
+npm install -g gitbook  gulp gulp-gh-pages
+
+
+
+
+```
 
 
 
