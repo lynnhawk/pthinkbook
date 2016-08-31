@@ -19,9 +19,6 @@
 ```bash
 npm install  gitbook  gulp gulp-gh-pages
 
-
-
-
 ```
 
 然后再执行下列命令
@@ -29,8 +26,6 @@ npm install  gitbook  gulp gulp-gh-pages
 ```bash
 gitbook build
 gulp publish
-
-
 
 ```
 
