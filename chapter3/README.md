@@ -14,7 +14,7 @@
 
 5、安装svn客户端
 
-6、如果要加入gitbook的在线书写团队，请安装git客户端，并注册github和gitbook的账号，然后在本地环境下安装gitbook工具。如果要发布书请在书籍的工程目录下，先安装发布工具
+6、如果要加入gitbook的在线书写团队，请安装git客户端，并注册github和gitbook的账号，然后在本地环境下安装gitbook工具。如果要发布书请在书籍的工程目录下，先安装发布工具，执行的命令如下
 
 ```bash
 npm install  gitbook  gulp gulp-gh-pages
@@ -24,10 +24,10 @@ npm install  gitbook  gulp gulp-gh-pages
 
 ```
 
-然后再执行
+然后再执行下列命令
 
 ```bash
-
+gitbook build
 gulp publish
 
 
