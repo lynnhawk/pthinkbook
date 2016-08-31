@@ -2,6 +2,8 @@
 
 如果需要使用让返回信息的字段说明能支持多语言，可以利用后台的多语言服务，将自动把返回报文中字段部分的中文信息自动输出到报文中。当没有找到中文资源时，会直接返回原始英文字段内容，如果匹配到了多个字段翻译，则只会返回第一个匹配的内容。多语言的资源文件在工程目录下的resources中，中文资源文件使用的编码格式为UTF-8，无需转换。
 
+如果资源文件名已修改（比如名称变更为pthink.properties），请记得修改执行器中app.prpoperties中的参数“**app.fieldFilename**”属性值，将默认值“fields”变更为“pthink”，然后重新发布pthink-db.jar和app.properties到生成环境中即可。
+
 ## 1、fields.properties  -- 默认
 
 ```java
