@@ -4,7 +4,7 @@
 
 如果资源文件名已修改（比如名称变更为pthink.properties），请记得修改执行器中app.prpoperties中的参数“**app.fieldFilename**”属性值，将默认值“fields”变更为“pthink”，然后重新发布pthink-db.jar和app.properties到生成环境中即可。如需要更多语言支持，请自行直接添加对应的语言资源文件即可。
 
-
+多语言范例文件如下：
 
 ## 1、fields.properties  -- 默认
 
