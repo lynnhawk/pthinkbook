@@ -14,5 +14,7 @@ Ice 是一种面向对象的中间件平台。从根本上说，这意味着Ice 
 
 JFinal 是基于 Java 语言的轻量级 WEB + ORM 框架，我们使用了其ActiveRecord组件来处理数据库操作。
 
-# 
+# BU
+
+Business Unit，业务单元组件，单项业务的实现单元组件。
 
