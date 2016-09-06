@@ -20,11 +20,13 @@ it s tool for editor, a good tool
 
 # Eclipse
 
-开发工具。建议安装neon （4.6） For EE版本。
-
-## 额外的插件
+开发工具。建议安装neon （4.6） For EE版本。额外的插件包括：
 
 * Subversive插件（svn），下载地址为：[http:\/\/www.eclipse.org\/subversive\/downloads.php](http://www.eclipse.org/subversive/downloads.php)
+
+# IntelliJ IDEA
+
+开发工具。直接安装使用，可下载Communication的版本即可满足日常开发要求。
 
 ## 内部开发包的 API查询地址
 
