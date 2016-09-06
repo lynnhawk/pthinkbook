@@ -119,3 +119,26 @@ angular.module('starter.services', ['ngResource']) .factory('Servers', function 
 
 android 和iOS均要有相应的模拟器
 
+### E、测试
+
+如果需要在Linux后台利用ionic来进行测试，并且希望退出控制台后可以继续执行，需要利用screen来执行下面的操作
+
+```bash
+
+$ screen -list
+
+There is a screen on:
+
+ 27963.screen_test (Detached)
+
+1 Socket in /tmp/uscreens/S-jiangfeng.
+
+$ cd /path/xx/ionicproject
+$ionic serve
+
+
+
+```
+
+然后关闭远程终端即可。
+

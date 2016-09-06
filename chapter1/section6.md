@@ -80,19 +80,14 @@ app.keystore=1
 app.cluster=0
 
 #session超时，单位为秒
-
 app.session.timeout=30
 
 # 是否启动http server
-
 httpserver.start=true
-
 #httpserver端口
-
 httpserver.port=8801
 
 #是否加载ActiveRecord
-
 jfinalActiveRecordPlugin.start=true
 
 ```
