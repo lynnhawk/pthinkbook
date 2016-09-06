@@ -18,3 +18,13 @@ Business Unit，业务单元组件，单项业务的实现单元组件。
 
 it s tool for editor, a good tool
 
+
+
+# Eclipse
+
+开发工具。建议安装neon （4.6） For EE版本。
+
+## 额外的插件
+
+* Subversive插件（svn），下载地址为：[http:\/\/www.eclipse.org\/subversive\/downloads.php](http://www.eclipse.org/subversive/downloads.php)
+
