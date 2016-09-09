@@ -1,5 +1,6 @@
 # 第六节 执行器：executor
 
+
 如果需要发布新版本，仅需要执行目录下的deploy.bat即可自动完成。文件为target目录下的pthink-executor-bin.zip
 
 zip文件解压缩后，核心配置文件包括：
@@ -11,6 +12,8 @@ applicationContext.xml ：spring配置文件
 apprun.bat ：windows环境下的主执行程序
 
 db.properties ：数据库配置文件
+
+mail.properties ： 邮件发送控件的配置文件
 
 gen.properties：自动生成db类的配置文件，生产环境下请删除。
 
@@ -37,14 +40,6 @@ app.debug=true
 
 dbtype=mariadb
 
-#Ice.*为通讯平台的参数，可按实际情况进行调整
-
-Ice.MessageSizeMax=10240
-
-Ice.ThreadPool.Server.Size=50
-
-Ice.ThreadPool.Server.SizeMax=100
-
 # CommunicationFile* 文件传输的相关参数
 
 CommunicationFilePath=.\/CommunicationFilePath
@@ -66,10 +61,20 @@ app.pluginClasspath=file:./units/
 # 业务bu 的自动更新间隔，单位是毫秒，默认3秒
 
 app.pluginschedulingtime=3000
+
 #多语言资源文件名
 app.fieldFilename=fields
+
 #默认语言环境，在输出报文时会根据此处内容自动调整columns部分titile和cn的值
 app.defaultLocale=zh
+
+#为通讯平台的参数，可按实际情况进行调整 
+
+app.MessageSizeMax=10240 
+
+app.ThreadPool.Server.Size=50 
+
+app.ThreadPool.Server.SizeMax=100
 
 #是否保存key，无需修改
 
@@ -89,6 +94,11 @@ httpserver.port=8801
 
 #是否加载ActiveRecord
 jfinalActiveRecordPlugin.start=true
+
+#系统需要启用的插件列表，目前包括encache/mailer/shiro
+
+app.plugins=ehcache,mailer
+
 
 ```
 
@@ -223,7 +233,69 @@ tableNamePrefixes=t_
     </root>
 </configuration>
 
+
+
 ```
 
-大部分内容基本不用修改，可以调节的参数为&lt;root level="DEBUG"&gt; ... &lt;\/root&gt;，生产环境下建议将DEBUG修改为ERROR
+大部分内容基本不用修改，可以调节的参数为<root level="DEBUG"> ... </root>，生产环境下建议将DEBUG修改为ERROR
+
+
+
+## 6、邮件配置文件mail.properties
+
+邮件发送服务器的配置文件
+
+
+```java
+
+#smtp服务器地址
+
+smtp.host=smtp.pthink.com.cn
+
+#端口号
+
+smtp.port=25
+
+
+#超时时间，单位ms
+
+smtp.timeout=900000
+
+#ssl port
+
+smtp.sslport=587
+
+#是否需要ssl
+
+smtp.ssl=false
+
+#是否需要tls
+
+smtp.tls=false
+
+#是否打印debug信息
+
+smtp.debug=true
+
+#发件人账户
+
+smtp.user=cpb-noreply@pthink.com.cn
+
+#发件人邮箱密码，正式环境下需要加密
+
+smtp.password=a123456
+
+#发件人称呼
+
+smtp.name=[pthink]
+
+#发件人来源显示信息
+
+smtp.from=cpb-noreply@pthink.com.cn
+
+
+
+```
+
+
 

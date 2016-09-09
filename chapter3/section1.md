@@ -1,6 +1,10 @@
 # 第一节 创建新的Web客户端
 
-## 1、范例程序说明
+程序开发注意点：
+
+* 范例程序中表格显示采用的是jQuery 的DataTable控件，它在进行翻页时默认限制了服务端返回的json数据格式内容，因此我们在使用该控件时，需要在最后返回数据时调用clientapi中的DataTableUtil.getRetData进行二次加工后再输出即可正常工作。
+
+## 1、范例说明
 
 程序是基于jfinal的框架开发的，下载地址：[http:\/\/222.44.18.140\/svn\/pthink\/product\/PthinkCloudApp\/02.example\/02.client\/ExampleWeb](http://222.44.18.140/svn/pthink/product/PthinkCloudApp/02.example/02.client/ExampleWeb)
 

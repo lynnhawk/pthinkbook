@@ -32,3 +32,44 @@ gulp publish
 
 执行完毕后，就可以在github网站上看到最新编写的文档了。网址是：[https:\/\/lynnhawk.github.io\/pthinkbook\/index.html](https://lynnhawk.github.io/pthinkbook/index.html)
 
+由于所有客户端都需要通过clientapi来与服务层进行通讯，因此所有的java工程需要记得引入api。maven的引入方式如下：
+
+```xml
+
+<dependency>
+ <groupId>penghaiyu.cloudapp.client</groupId>
+ <artifactId>clientapi</artifactId>
+ <version>1.0-SNAPSHOT</version>
+</dependency>
+
+
+```
+
+该插件有一个配置文件，名称为server.properties，记得配置并放入classpath中即可。配置文件范例如下：
+
+```java
+
+#服务器URL
+AppServerURL=PthinkCloudAppListener:default -h 127.0.0.1 -p 9701 -t 3000
+serverId=PthinkCloudAppListener
+servers=127.0.0.2:9701:0,115.159.64.16:9701:0
+
+#服务器报文
+app.MessageSizeMax=10240
+app.ThreadPool.Server.Size=50
+app.ThreadPool.Server.SizeMax=100
+
+#缺省报文模板
+packet_default={{},"DATA":{"opttype":"{}","pager":{"pageNo":{},"pageSize":{}},"params":{"entity":{}}}}}
+packet_header="CMD":{"appver":"v1.0","tradeid":"{}","src":"{}","des":"{}","tradecode":"{}","opercode":"{}","workdate":"{}","worktime":"{}"}
+packet_pager="pager":{"pageNo":{},"pageSize":{}}
+packet_params="params":{"entity":{}}#functiontemplate
+
+#业务功能调用模板
+F1000={{},"DATA":{"opttype":"{}","pager":{"pageNo":{},"pageSize":{}},"params":{"entity":{"rq":{},"userid":"{}","username":"{}","userip":"{}"}}}}}
+F1001={{},"DATA":{"opttype":"{}","pager":{"pageNo":{},"pageSize":{}},"params":{"entity":{"rq":{},"userid":"{}","username":"{}","userip":"{}"}}}}}
+
+
+
+```
+
