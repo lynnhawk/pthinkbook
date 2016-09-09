@@ -32,3 +32,9 @@ gulp publish
 
 执行完毕后，就可以在github网站上看到最新编写的文档了。网址是：[https:\/\/lynnhawk.github.io\/pthinkbook\/index.html](https://lynnhawk.github.io/pthinkbook/index.html)
 
+
+
+由于所有客户端都需要通过clientapi来与服务层进行通讯，因此所有的java工程需要记得引入api。maven的引入方式如下：
+
+
+
