@@ -249,36 +249,48 @@ tableNamePrefixes=t_
 ```java
 
 #smtp服务器地址
+
 smtp.host=smtp.pthink.com.cn
 
 #端口号
+
 smtp.port=25
 
+
 #超时时间，单位ms
+
 smtp.timeout=900000
 
 #ssl port
+
 smtp.sslport=587
 
 #是否需要ssl
+
 smtp.ssl=false
 
 #是否需要tls
+
 smtp.tls=false
 
 #是否打印debug信息
+
 smtp.debug=true
 
 #发件人账户
+
 smtp.user=cpb-noreply@pthink.com.cn
 
 #发件人邮箱密码，正式环境下需要加密
+
 smtp.password=a123456
 
 #发件人称呼
+
 smtp.name=[pthink]
 
 #发件人来源显示信息
+
 smtp.from=cpb-noreply@pthink.com.cn
 
 
