@@ -12,6 +12,8 @@ apprun.bat ：windows环境下的主执行程序
 
 db.properties ：数据库配置文件
 
+mail.properties ： 邮件发送控件的配置文件
+
 gen.properties：自动生成db类的配置文件，生产环境下请删除。
 
 genmodel.bat：自动生成 db类的执行程序
@@ -36,14 +38,6 @@ app.debug=true
 #数据库类型，可用的参数为oracle 、 sqlserver 、 mysql 、mariadb 四种，注意全部为小写
 
 dbtype=mariadb
-
-#Ice.*为通讯平台的参数，可按实际情况进行调整
-
-Ice.MessageSizeMax=10240
-
-Ice.ThreadPool.Server.Size=50
-
-Ice.ThreadPool.Server.SizeMax=100
 
 # CommunicationFile* 文件传输的相关参数
 
@@ -70,6 +64,7 @@ app.pluginschedulingtime=3000
 app.fieldFilename=fields
 #默认语言环境，在输出报文时会根据此处内容自动调整columns部分titile和cn的值
 app.defaultLocale=zh
+
 
 #是否保存key，无需修改
 
