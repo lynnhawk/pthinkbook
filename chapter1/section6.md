@@ -65,6 +65,10 @@ app.fieldFilename=fields
 #默认语言环境，在输出报文时会根据此处内容自动调整columns部分titile和cn的值
 app.defaultLocale=zh
 
+#为通讯平台的参数，可按实际情况进行调整 
+app.MessageSizeMax=10240 
+app.ThreadPool.Server.Size=50 
+app.ThreadPool.Server.SizeMax=100
 
 #是否保存key，无需修改
 
@@ -84,6 +88,10 @@ httpserver.port=8801
 
 #是否加载ActiveRecord
 jfinalActiveRecordPlugin.start=true
+
+#系统需要启用的插件列表，目前包括encache/mailer/shiro
+app.plugins=ehcache,mailer
+
 
 ```
 
@@ -219,6 +227,41 @@ tableNamePrefixes=t_
 </configuration>
 
 ```
+
+## 6、邮件配置文件mail.properties
+
+```java
+
+#email smtp.gmail.com smtp.163.com smtp.live.com
+
+smtp.host=smtp.pthink.com.cn
+
+smtp.port=25
+
+smtp.timeout=900000
+
+smtp.sslport=587
+
+smtp.ssl=false
+
+smtp.tls=false
+
+smtp.debug=true
+
+smtp.user=cpb-noreply@pthink.com.cn
+
+smtp.password=a123456
+
+smtp.name=[pthink]
+
+smtp.from=cpb-noreply@pthink.com.cn
+
+
+
+```
+
+
+
 
 大部分内容基本不用修改，可以调节的参数为&lt;root level="DEBUG"&gt; ... &lt;\/root&gt;，生产环境下建议将DEBUG修改为ERROR
 
