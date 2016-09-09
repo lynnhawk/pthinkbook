@@ -49,9 +49,21 @@ gulp publish
 
 ```java
 
-#appserverinfoAppServerURL=PthinkCloudAppListener:default -h 127.0.0.1 -p 9701 -t 3000serverId=PthinkCloudAppListenerservers=127.0.0.2:9701:0,115.159.64.16:9701:0app.MessageSizeMax=10240app.ThreadPool.Server.Size=50app.ThreadPool.Server.SizeMax=100#packet_default={{},"DATA":{"opttype":"{}","pager":{"pageNo":{},"pageSize":{}},"params":{"entity":{}}}}}packet_header="CMD":{"appver":"v1.0","tradeid":"{}","src":"{}","des":"{}","tradecode":"{}","opercode":"{}","workdate":"{}","worktime":"{}"}packet_pager="pager":{"pageNo":{},"pageSize":{}}packet_params="params":{"entity":{}}#functiontemplate#F1000={{},"DATA":{"opttype":"{}","pager":{"pageNo":{},"pageSize":{}},"params":{"entity":{"rq":{},"userid":"{}","username":"{}","userip":"{}"}}}}}F1000={{},"DATA":{"opttype":"{}","pager":{"pageNo":{},"pageSize":{}},"params":{"entity":{"rq":{},"userid":"{}","username":"{}","userip":"{}"}}}}}F1001={{},"DATA":{"opttype":"{}","pager":{"pageNo":{},"pageSize":{}},"params":{"entity":{"rq":{},"userid":"{}","username":"{}","userip":"{}"}}}}}
+#appserverinfo
+AppServerURL=PthinkCloudAppListener:default -h 127.0.0.1 -p 9701 -t 3000
+serverId=PthinkCloudAppListener
+servers=127.0.0.2:9701:0,115.159.64.16:9701:0
+app.MessageSizeMax=10240
+app.ThreadPool.Server.Size=50
+app.ThreadPool.Server.SizeMax=100#templatepacket_default={{},"DATA":{"opttype":"{}","pager":{"pageNo":{},"pageSize":{}},"params":{"entity":{}}}}}
+packet_header="CMD":{"appver":"v1.0","tradeid":"{}","src":"{}","des":"{}","tradecode":"{}","opercode":"{}","workdate":"{}","worktime":"{}"}
+packet_pager="pager":{"pageNo":{},"pageSize":{}}
+packet_params="params":{"entity":{}}#functiontemplate
+#F1000={{},"DATA":{"opttype":"{}","pager":{"pageNo":{},"pageSize":{}},"params":{"entity":{"rq":{},"userid":"{}","username":"{}","userip":"{}"}}}}}
+F1000={{},"DATA":{"opttype":"{}","pager":{"pageNo":{},"pageSize":{}},"params":{"entity":{"rq":{},"userid":"{}","username":"{}","userip":"{}"}}}}}
+F1001={{},"DATA":{"opttype":"{}","pager":{"pageNo":{},"pageSize":{}},"params":{"entity":{"rq":{},"userid":"{}","username":"{}","userip":"{}"}}}}}
+
 
 
 ```
-
 
