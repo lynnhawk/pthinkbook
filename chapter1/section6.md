@@ -226,34 +226,52 @@ tableNamePrefixes=t_
     </root>
 </configuration>
 
+
+
 ```
+
+大部分内容基本不用修改，可以调节的参数为<root level="DEBUG"> ... </root>，生产环境下建议将DEBUG修改为ERROR
+
+
 
 ## 6、邮件配置文件mail.properties
 
+邮件发送服务器的配置文件
+
+
 ```java
 
-#email smtp.gmail.com smtp.163.com smtp.live.com
-
+#smtp服务器地址
 smtp.host=smtp.pthink.com.cn
 
+#端口号
 smtp.port=25
 
+#超时时间，单位ms
 smtp.timeout=900000
 
+#ssl port
 smtp.sslport=587
 
+#是否需要ssl
 smtp.ssl=false
 
+#是否需要tls
 smtp.tls=false
 
+#是否打印debug信息
 smtp.debug=true
 
+#发件人账户
 smtp.user=cpb-noreply@pthink.com.cn
 
+#发件人邮箱密码，正式环境下需要加密
 smtp.password=a123456
 
+#发件人称呼
 smtp.name=[pthink]
 
+#发件人来源显示信息
 smtp.from=cpb-noreply@pthink.com.cn
 
 
@@ -261,7 +279,4 @@ smtp.from=cpb-noreply@pthink.com.cn
 ```
 
 
-
-
-大部分内容基本不用修改，可以调节的参数为&lt;root level="DEBUG"&gt; ... &lt;\/root&gt;，生产环境下建议将DEBUG修改为ERROR
 
