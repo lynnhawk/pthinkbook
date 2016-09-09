@@ -60,14 +60,19 @@ app.pluginClasspath=file:./units/
 # 业务bu 的自动更新间隔，单位是毫秒，默认3秒
 
 app.pluginschedulingtime=3000
+
 #多语言资源文件名
 app.fieldFilename=fields
+
 #默认语言环境，在输出报文时会根据此处内容自动调整columns部分titile和cn的值
 app.defaultLocale=zh
 
 #为通讯平台的参数，可按实际情况进行调整 
+
 app.MessageSizeMax=10240 
+
 app.ThreadPool.Server.Size=50 
+
 app.ThreadPool.Server.SizeMax=100
 
 #是否保存key，无需修改
@@ -90,6 +95,7 @@ httpserver.port=8801
 jfinalActiveRecordPlugin.start=true
 
 #系统需要启用的插件列表，目前包括encache/mailer/shiro
+
 app.plugins=ehcache,mailer
 
 
