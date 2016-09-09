@@ -1,10 +1,9 @@
 # 第一节 父工程：Parent
 
-仅定义pom.xml
-
-里面声明了distributionManagement  和plugins。
+仅定义pom.xml ，里面声明了distributionManagement  和plugins。开发时如果需要变动内容，请记得及时通过mvn deploy，命令发布到服务器。
 
 xml内容如下：
+
 ```xml
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -314,3 +313,4 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
 </project>
 
 ```
+
