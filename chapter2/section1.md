@@ -1,5 +1,13 @@
 # 第一节 创建新的数据库映射
 
+
+
+注意事项：
+
+* 数据库表中，真实表中的列 名 不允许使用的名字包括：RN、tempcolumn、temprownumber，这些名字已经被系统内部使用，否则会系统自动过滤这些列信息，不会输出给客户端。
+
+
+
 ## 1、使用JFinal控件：定义或生成数据库表的映射
 
 如果是JFinal的ActiveRecord，则配置好db.properties和gen.properties文件（配置说明请参看[第一章 第六节](/chapter1/section6.md)）后，直接调用genmodal.bat，然后将生成的文件复制到db的工程里面就可以进行编译打包了。
@@ -10,7 +18,7 @@
 
 ```java
 
-public class _MappingKit {
+public class MappingKit {
 
     public static void mapping(ActiveRecordPlugin arp) {
         arp.addMapping("CUSTOMERS", "CUSTOMERNUMBER", CUSTOMERS.class);
