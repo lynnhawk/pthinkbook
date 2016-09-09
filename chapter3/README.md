@@ -49,17 +49,23 @@ gulp publish
 
 ```java
 
-#appserverinfo
+#服务器URL
 AppServerURL=PthinkCloudAppListener:default -h 127.0.0.1 -p 9701 -t 3000
 serverId=PthinkCloudAppListener
 servers=127.0.0.2:9701:0,115.159.64.16:9701:0
+
+#服务器报文
 app.MessageSizeMax=10240
 app.ThreadPool.Server.Size=50
-app.ThreadPool.Server.SizeMax=100#templatepacket_default={{},"DATA":{"opttype":"{}","pager":{"pageNo":{},"pageSize":{}},"params":{"entity":{}}}}}
+app.ThreadPool.Server.SizeMax=100
+
+#缺省报文模板
+packet_default={{},"DATA":{"opttype":"{}","pager":{"pageNo":{},"pageSize":{}},"params":{"entity":{}}}}}
 packet_header="CMD":{"appver":"v1.0","tradeid":"{}","src":"{}","des":"{}","tradecode":"{}","opercode":"{}","workdate":"{}","worktime":"{}"}
 packet_pager="pager":{"pageNo":{},"pageSize":{}}
 packet_params="params":{"entity":{}}#functiontemplate
-#function template 
+
+#业务功能调用模板
 F1000={{},"DATA":{"opttype":"{}","pager":{"pageNo":{},"pageSize":{}},"params":{"entity":{"rq":{},"userid":"{}","username":"{}","userip":"{}"}}}}}
 F1001={{},"DATA":{"opttype":"{}","pager":{"pageNo":{},"pageSize":{}},"params":{"entity":{"rq":{},"userid":"{}","username":"{}","userip":"{}"}}}}}
 
