@@ -18,7 +18,7 @@
 
 * log4j & logback
 
-* c3p0 \/ druid （数据库连接池，可任选，默认druid）
+* c3p0\/ dbcp \/ druid （数据库连接池，可任选，默认druid）
 
 
 ......

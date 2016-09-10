@@ -2,6 +2,14 @@
 
 仅定义pom.xml ，里面声明了distributionManagement  和plugins。开发时如果需要变动内容，请记得及时通过mvn deploy，命令发布到服务器。xml内容如下：
 
+这个文件中有一个属性值project.executor.runtime.dir，它是为了让大家开发时可以更快速的进行调试而定义，当将相关业务代码编写好需要进行测试时，只要在对应的工程中执行  mvn  package，maven就会自动将最新版本的jar文件自动复制到runtime 的环境中，其中：
+
+1、后台服务bu会直接自动重新加载
+
+2、如果除bu外的其他jar文件有更新，则需要手工重新启动后台服务
+
+
+
 ```xml
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -83,6 +91,11 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
 <jfinal-slf4j.version>0.1</jfinal-slf4j.version>
 
 <druid.version>1.0.24</druid.version>
+
+<!-- executor runtime dir-->
+
+ <project.executor.runtime.dir>开发者本机的svn地址+/PthinkCloudApp/test/pthink-executor</project.executor.runtime.dir>
+
 
 </properties>
 
