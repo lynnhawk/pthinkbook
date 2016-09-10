@@ -1,6 +1,6 @@
 # 第一节 父工程：Parent
 
-仅定义pom.xml ，里面声明了distributionManagement  和plugins。开发时如果需要变动内容，请记得及时通过mvn deploy，命令发布到服务器。xml内容如下：
+仅定义pom.xml ，里面声明了distributionManagement  和plugins。开发时如果需要变动内容，请记得及时通过mvn deploy，命令发布到服务器。
 
 这个文件中有一个属性值project.executor.runtime.dir，它是为了让大家开发时可以更快速的进行调试而定义，当将相关业务代码编写好需要进行测试时，只要在对应的工程中执行  mvn  package，maven就会自动将最新版本的jar文件自动复制到runtime 的环境中，其中：
 
@@ -8,7 +8,7 @@
 
 2、如果除bu外的其他jar文件有更新，则需要手工重新启动后台服务
 
-
+xml内容如下：
 
 ```xml
 
