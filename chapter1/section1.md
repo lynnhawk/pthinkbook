@@ -96,6 +96,17 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
 
  <project.executor.runtime.dir>开发者本机的svn地址+/PthinkCloudApp/test/pthink-executor</project.executor.runtime.dir>
 
+ <project.executor.runtime.dir>C:/+svn/pthink.com.cn/product/PthinkCloudApp/test/pthink-executor</project.executor.runtime.dir>
+
+ <project.testserver.key>C:/+svn/pthink.com.cn/product/PthinkCloudApp/test/10.10.241.24.ppk</project.testserver.key>
+
+ <project.testserver.remotedir>/home/cloudapp/server</project.testserver.remotedir>
+
+ <project.testserver.ip>222.44.18.147</project.testserver.ip>
+
+
+
+
 
 </properties>
 
