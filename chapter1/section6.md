@@ -244,7 +244,7 @@ tableNamePrefixes=t_
 
 ```
 
-大部分内容基本不用修改，可以调节的参数为<root level="DEBUG"> ... </root>，生产环境下建议将DEBUG修改为ERROR
+大部分内容基本不用修改，可以调节的参数为<root level="DEBUG"> ，生产环境下建议将DEBUG修改为ERROR
 
 
 
