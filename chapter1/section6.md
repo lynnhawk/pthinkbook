@@ -36,6 +36,7 @@ stop.sh ：linux环境下的 停止程序
 #是否打开调试模式
 
 app.debug=true
+
 #数据库类型，可用的参数为oracle 、 sqlserver 、 mysql 、mariadb 四种，注意全部为小写
 
 dbtype=mariadb
@@ -88,12 +89,15 @@ app.cluster=0
 app.session.timeout=30
 
 # 是否启动http server
+
 httpserver.start=true
 
 #httpserver端口
+
 httpserver.port=8801
 
 #是否加载ActiveRecord
+
 jfinalActiveRecordPlugin.start=true
 
 #系统需要启用的插件列表，目前包括encache/mailer/shiro
