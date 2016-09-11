@@ -155,6 +155,7 @@ jdbc.password=password
 jdbc.validationQuery=select 1
 
 hibernate.dialect=org.hibernate.dialect.MySQLDialect
+
 ```
 
 上述参数一般只需要修改粗体部分的内容即可。
