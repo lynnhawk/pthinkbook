@@ -105,9 +105,6 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
  <project.testserver.ip>222.44.18.147</project.testserver.ip>
 
 
-
-
-
 </properties>
 
 <groupId>com.pthink.cloudapp</groupId>
