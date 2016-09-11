@@ -98,9 +98,9 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
 
  <project.testserver.key>开发者本机的svn/PthinkCloudApp/test/10.10.241.24.ppk</project.testserver.key>
 
- <project.testserver.remotedir>/home/cloudapp/server</project.testserver.remotedir>
+ <project.testserver.remotedir>测试服务器运行目录，不用改/home/cloudapp/server</project.testserver.remotedir>
 
- <project.testserver.ip>222.44.18.147</project.testserver.ip>
+ <project.testserver.ip>测试服务器IP地址：222.44.18.147</project.testserver.ip>
 
 
 </properties>
