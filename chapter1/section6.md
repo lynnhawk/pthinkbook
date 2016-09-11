@@ -27,7 +27,7 @@ start.sh ：linux环境下的 启动程序
 
 stop.sh ：linux环境下的 停止程序
 
----
+
 
 ## 1、配置文件app.properties的参数说明
 
