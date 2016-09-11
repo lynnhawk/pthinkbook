@@ -2,27 +2,20 @@
 
 * [简介](README.md)
 * [第一章 概述](chapter1/README.md)
-
-  * [第一节 父工程：Parent](chapter1/section1.md)
-  * [第二节 核心组件：ServerCore](chapter1/section2.md)
-  * [第三节 公共类：Commons](chapter1/section3.md)
-  * [第四节 数据库映射：Db](chapter1/section4.md)
-  * [第五节 业务组件：Bu](chapter1/section5.md)
-  * [第六节 执行器：executor](chapter1/section6.md)
-  * [第七节 系统插件： plug-ins](chapter1/section7.md)
-
+    * [第1节 父工程：Parent](chapter1/section1.md)
+    * [第2节 主容器：ServerCore](chapter1/section2.md)
+    * [第3节 公共类：Commons](chapter1/section3.md)
+    * [第4节 数据库映射：Db](chapter1/section4.md)
+    * [第5节 业务组件：Bu](chapter1/section5.md)
+    * [第6节 系统插件： plug-ins](chapter1/section7.md)
+    * [第7节 执行器：executor](chapter1/section6.md)
 * [第二章 创建一个新工程的后台服务层](chapter2/README.md)
-
-  * [第一节 创建新的数据库映射](chapter2/section1.md)
-  * [第二节 开发新业务功能](chapter2/section2.md)
-  * [第三节 加入数据库字段多语言](chapter2/section3.md)
-
+    * [第一节 创建新的数据库映射](chapter2/section1.md)
+    * [第二节 开发新业务功能](chapter2/section2.md)
+    * [第三节 加入数据库字段多语言](chapter2/section3.md)
 * [第三章 创建一个新工程的用户展示层](chapter3/README.md)
-
-  * [第一节 创建新的Web客户端](chapter3/section1.md)
-  * [第二节 创建新的移动客户端](chapter3/section2.md)
-  * [第三节 创建新的GUI客户端](chapter3/section3.md)
-
+    * [第一节 创建新的Web客户端](chapter3/section1.md)
+    * [第二节 创建新的移动客户端](chapter3/section2.md)
+    * [第三节 创建新的GUI客户端](chapter3/section3.md)
 * [附录](GLOSSARY.md)
-
 
