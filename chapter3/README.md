@@ -18,7 +18,7 @@
 
 ```bash
 npm install -g gitbook-cli  
-npm install gulp gulp-gh-pages
+npm install -g gulp gulp-gh-pages
 
 ```
 
