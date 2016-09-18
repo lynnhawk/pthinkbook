@@ -11,3 +11,6 @@
 
 需要使用的配置文件：config.properties
 如果使用的是文件型字典数据，则还需要dict.properties
+
+[include](D:\+svn\PthinkCloudApp\03.server\pthink-plugins\pthink-ext-dictionary\src\main\resources)
+
