@@ -12,8 +12,6 @@
 [include](D:\+svn\PthinkCloudApp\03.server\pthink-plugins\pthink-ext-dictionary\src\main\resources\config.properties)
 
 
-
-
 如果使用的是文件型字典数据，则还需要 {% em type="green" %} dict.properties {% endem %}
 
 
