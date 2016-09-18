@@ -5,7 +5,8 @@
         "theme-api",
         "ace",
         "emphasize",
-        "include-codeblock"
+        "include-codeblock",
+        "signature"
     ],
     "pluginsConfig": {
         "fontSettings": {
@@ -47,7 +48,9 @@
             "copyright": "Copyright &copy www.pthink.com.cn 2016",
             "modify_label": "modified: ",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
-        }
+        },
+"signature":{ "autoTimeStamp":{ "color":"gray", "timeStampFormat": "YYYY/MM/DD HH:mm:ss" }, "autoCopyright":{ "color":"gray", "owner":"Hao", "center":true }, "signature":{ "key": "customized signature" } }
+
     },
     "author": "phy",
     "pdf": {
