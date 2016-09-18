@@ -6,7 +6,7 @@
         "ace",
         "emphasize",
         "include-codeblock",
-        "signature"
+        "-signature"
     ],
     "pluginsConfig": {
         "fontSettings": {
@@ -49,7 +49,7 @@
             "modify_label": "modified: ",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
-"gitbook-plugin-signature":{
+"-gitbook-plugin-signature":{
 "autoTimeStamp": { 
 "color":"gray", 
 "timeStampFormat": "YYYY-MM-DD HH:mm:ss" 
