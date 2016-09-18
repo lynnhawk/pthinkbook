@@ -49,7 +49,20 @@
             "modify_label": "modified: ",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
-"signature":{ "autoTimeStamp":{ "color":"gray", "timeStampFormat": "YYYY/MM/DD HH:mm:ss" }, "autoCopyright":{ "color":"gray", "owner":"Hao", "center":true }, "signature":{ "key": "customized signature" } }
+"signature":{ 
+"autoTimeStamp": { 
+"color":"gray", 
+"timeStampFormat": "YYYY/MM/DD HH:mm:ss" 
+}, 
+"autoCopyright":{ 
+"color":"gray", 
+"owner":"Hao", 
+"center":true 
+}, 
+"signature":{ 
+"key": "customized signature" 
+} 
+}
 
     },
     "author": "phy",
