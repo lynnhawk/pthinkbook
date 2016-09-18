@@ -9,10 +9,8 @@
 
 系统启动并加载成功后，它能够将所有的数据字典加载到ehcache中，实现字典数据的快速访问，如果系统变动了字典数据，它也可以自动更新cache并写入到数据库或字典文件中。
 
-This text is {% em type="green"  %} highlighted !{% endem %}
 
-
-需要使用的配置文件：config.properties
+需要使用的配置文件： config.properties 
 如果使用的是文件型字典数据，则还需要dict.properties
 
 [include](D:\+svn\PthinkCloudApp\03.server\pthink-plugins\pthink-ext-dictionary\src\main\resources\dict.properties)
