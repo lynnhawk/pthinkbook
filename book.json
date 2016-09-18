@@ -1,19 +1,19 @@
 {
-    
-    "title": "新鹏程产品开发指导书",
-    "description": "新鹏程产品开发指导书API",
-    "author" : "phy",
-    "plugins": [ 
-				"tbfed-pagefooter","github",
-				"theme-api"  
-	],
+    "plugins": [
+        "tbfed-pagefooter",
+        "github",
+        "theme-api",
+        "ace",
+        "emphasize",
+        "include-codeblock"
+    ],
     "pluginsConfig": {
         "fontSettings": {
-            "theme": "sepia", 
+            "theme": "sepia",
             "family": "serif",
-            "size": 1 
+            "size": 1
         },
-		"theme-api": {
+        "theme-api": {
             "languages": [
                 {
                     "lang": "js",
@@ -25,8 +25,8 @@
                     "name": "Java"
                 }
             ]
-		},
-		"autocover": {
+        },
+        "autocover": {
             "font": {
                 "size": null,
                 "family": "Impact",
@@ -40,36 +40,24 @@
                 "color": "#09F"
             }
         },
-		"github": { "url": "https://github.com/lynnhawk/pthinkbook.git" 
-		},
-		"tbfed-pagefooter": {
-			"copyright":"Copyright &copy www.pthink.com.cn 2016",
-			"modify_label": "modified: ",
-			"modify_format": "YYYY-MM-DD HH:mm:ss"
-		}
-    },
-    "links": {
-    	"sidebar": {
-    	    "新鹏程": "http://www.pthink.com.cn"
-    	},
-        "sharing": {
-            "google": null,
-            "facebook": null,
-            "twitter": null,
-            "weibo": null,
-            "all": null
+        "github": {
+            "url": "https://github.com/lynnhawk/pthinkbook.git"
+        },
+        "tbfed-pagefooter": {
+            "copyright": "Copyright &copy www.pthink.com.cn 2016",
+            "modify_label": "modified: ",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
         }
     },
+    "author": "phy",
     "pdf": {
-        "toc": true,
         "pageNumbers": false,
-        "fontSize": 12,
-        "paperSize": "a4",
         "margin": {
-            "right": 62,
-            "left": 62,
             "top": 36,
             "bottom": 36
-        }
-    }
+        },
+        "toc": true
+    },
+    "title": "产品开发指导书"
+    "description": "产品开发指导书API"
 }
