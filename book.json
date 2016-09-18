@@ -53,8 +53,12 @@
     },
     "author": "phy",
     "pdf": {
+         "fontSize": 12,
+        "paperSize": "a4",
         "pageNumbers": false,
         "margin": {
+            "left": 62,
+            "right": 62,
             "top": 36,
             "bottom": 36
         },
