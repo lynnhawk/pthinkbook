@@ -20,7 +20,7 @@
         <slf4j.version>1.7.21</slf4j.version>
         <ehcache.version>2.10.0</ehcache.version>
         <ice.version>3.4.2</ice.version>
-		<testng.version>6.9.10</testng.version>
+    	<testng.version>6.9.10</testng.version>
         <jfinal.version>2.2</jfinal.version>
         <jfinal-dreampie.version>1.2</jfinal-dreampie.version>
         <jfinal-web.version>0.2.1</jfinal-web.version>
