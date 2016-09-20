@@ -22,6 +22,6 @@
 * [第五章 常见问题](chapter5/README.md)
  * [数据库操作](chapter5/section1.md)
  * [BU层操作](chapter5/section2.md)
- * [Plugins开发](chapter5/section3.md)
+ * [Plugin开发](chapter5/section3.md)
 * [附录](GLOSSARY.md)
 
