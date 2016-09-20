@@ -20,4 +20,4 @@ project.testserver.remotedir， 测试服务器的执行器所在目录
 
 xml内容如下：
 
-[include](D:\+svn\PthinkCloudApp\03.server\pthink-parent\pom.xml)
+[include](/asset/pom.xml)
