@@ -20,4 +20,4 @@ project.testserver.remotedir， 测试服务器的执行器所在目录
 
 xml内容如下：
 
-[include](/asset/pom.xml)
+[include](/assets/pom.xml)
