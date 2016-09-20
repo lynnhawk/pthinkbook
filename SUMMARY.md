@@ -23,5 +23,6 @@
  * [数据库操作](chapter5/section1.md)
  * [BU层开发](chapter5/section2.md)
  * [Plugin开发](chapter5/section3.md)
+ * [展示层开发](chapter5/section4.md)
 * [附录](GLOSSARY.md)
 
