@@ -19,5 +19,7 @@
     * [第三节 创建新的GUI客户端](chapter3/section3.md)
 * [第四章 插件清单](chapter4/README.md)
     * [数据字典](chapter4/section1.md)
+* [第五章 常见问题](chapter5/README.md)
+ * [数据库操作](chapter5/section1.md)
 * [附录](GLOSSARY.md)
 
