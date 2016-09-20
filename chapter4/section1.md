@@ -14,5 +14,5 @@
 
 如果使用的是文件型字典数据，则还需要 {% em type="green" %} dict.properties {% endem %}
 
-[Include](/assets/dict.properties)
+[include](/assets/dict.properties)
 
