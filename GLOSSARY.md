@@ -27,6 +27,7 @@ it s tool for editor, a good tool
 # IntelliJ IDEA
 
 开发工具。直接安装使用，可下载Communication的版本即可满足日常开发要求。
+如果下载的是Ulimited 版本，请使用Active Server方式来激活，server url： http://222.44.18.147:61001
 
 ## 内部开发包的 API查询地址
 
