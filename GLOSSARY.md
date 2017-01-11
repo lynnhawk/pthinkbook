@@ -8,7 +8,7 @@ Ice 是一种面向对象的中间件平台。从根本上说，这意味着Ice 
 
 # [JFinal](http://www.jfinal.com/)
 
-JFinal 是基于 Java 语言的轻量级 WEB + ORM 框架，我们使用了其ActiveRecord组件来处理数据库操作。
+JFinal 是基于 Java 语言的轻量级 WEB + ORM 框架，我们使用了其ActiveRecord组件来处理数据库操作；使用了IPlugin接口来实现我们自己的业务Plugin
 
 # BU
 
