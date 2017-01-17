@@ -2,7 +2,7 @@
     "plugins": [
         "tbfed-pagefooter",
         "github",
-        "theme-api",
+        "-theme-api",
         "emphasize",
         "include-codeblock",
         "ace",
