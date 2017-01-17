@@ -6,8 +6,9 @@
         "emphasize",
         "include-codeblock",
         "ace",
+        "numbered-headings",
         "-signature",
-        "numbered-headings"
+        "-theme-default"
     ],
     "pluginsConfig": {
         "fontSettings": {
