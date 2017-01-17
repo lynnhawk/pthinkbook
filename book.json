@@ -1,12 +1,12 @@
 {
     "plugins": [
-        "tbfed-pagefooter",
+        "-tbfed-pagefooter",
         "github",
         "-theme-api",
         "emphasize",
         "include-codeblock",
         "ace",
-        "numbered-headings",
+        "-numbered-headings",
         "-signature",
         "theme-default"
     ],
