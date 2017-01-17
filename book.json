@@ -3,9 +3,9 @@
         "tbfed-pagefooter",
         "github",
         "theme-api",
-        "ace",
         "emphasize",
         "include-codeblock",
+        "ace",
         "-signature",
         "numbered-headings"
     ],
