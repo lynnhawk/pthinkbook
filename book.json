@@ -8,7 +8,7 @@
         "ace",
         "numbered-headings",
         "-signature",
-        "-theme-default"
+        "theme-default"
     ],
     "pluginsConfig": {
         "fontSettings": {
