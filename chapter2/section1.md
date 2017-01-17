@@ -8,11 +8,11 @@
 
 
 
-## 1、使用JFinal控件：定义或生成数据库表的映射
+## 使用JFinal控件：定义或生成数据库表的映射
 
 如果是JFinal的ActiveRecord，则配置好db.properties和gen.properties文件（配置说明请参看[第一章 第六节](/chapter1/section6.md)）后，直接调用genmodal.bat，然后将生成的文件复制到db的工程里面就可以进行编译打包了。
 
-## 2、 使用ActiveRecord时 需要追加的工作
+## 使用ActiveRecord时 需要追加的工作
 
 修改
 
@@ -41,15 +41,15 @@ public class MappingKit {
 
 将不需要的文件或者没有主键的表内容剔除。默认生成的代码，如果表中无主键，则会生成arp.addMapping\("TRIAL\_BALANCE", "",TrialBalance.class\);  我们需要手工修改该内容变更为： arp.addMapping\("TRIAL\_BALANCE", TrialBalance.class\);
 
-## 3、复制代码到工程
+## 复制代码到工程
 
 将所有映射类的代码加入到 pthink-db的工程中，代码放入pthink-db\src\main\java目录下面即可。
 
-## 4、为自动生成的部分数据库类开发相应的DAO操作（可选）
+## 为自动生成的部分数据库类开发相应的DAO操作（可选）
 
 可根据业务需要为相应的类开发一系列业务要求的dao操作类。
 
-## 5、编译发布
+## 编译发布
 
 在IDE环境下执行调用maven的compile、jar、delpoy等命令均可完成；或在命令行环境下执行mvn deploy也可以。然后将生成的jar文件（在target目录中）复制到运行环境下替换原来的pthink-db\*.jar的文件即可。
 

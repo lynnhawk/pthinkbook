@@ -6,7 +6,7 @@
 
 多语言范例文件如下：
 
-## 1、fields.properties  -- 默认
+## fields.properties  -- 默认
 
 ```java
 T_DEPARTMENT.OFFICECODE=OFFICECODE
@@ -22,7 +22,7 @@ T_DEPARTMENT.BMDM=BMDM
 
 ```
 
-## 2、fields\_en.properties -- 英文
+## fields\_en.properties -- 英文
 
 ```java
 T_DEPARTMENT.OFFICECODE=OFFICECODE
@@ -38,7 +38,7 @@ T_DEPARTMENT.BMDM=BMDM
 
 ```
 
-## 3、fields\_zh.properties -- 中文
+## fields\_zh.properties -- 中文
 
 ```java
 T_DEPARTMENT.OFFICECODE=部门

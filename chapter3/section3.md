@@ -1,6 +1,6 @@
 # 第三节 创建新的GUI客户端
 
-## 1、范例程序说明
+## 范例程序说明
 
 这个GUI程序是一个最简单的单界面程序，里面使用了jgoodies的Layout 、swing的JTable、IntelliJ的JForm。代码下载地址： [http:\/\/222.44.18.140\/svn\/pthink\/product\/PthinkCloudApp\/02.example\/02.client\/ExampleApplication](http://222.44.18.140/svn/pthink/product/PthinkCloudApp/02.example/02.client/ExampleApplication) 
 
@@ -10,21 +10,21 @@
 
 也引入了ClientAPI。工程创建方式基本雷同，但是pom.xml当中引入了更多的UI控件，便于编译和运行。
 
-## 2、系统开发步骤
+## 系统开发步骤
 
-### A、新建一个工程
+### 新建一个工程
 
-### B、新建一个GUI Form
+### 新建一个GUI Form
 
 Layout可以选择jgoodies或intellij
 
-### C、为Form加入需要的UI组件
+### 为Form加入需要的UI组件
 
 修改主panel的名字为mainpanel
 
-### D、为控件加入相应事件
+### 为控件加入相应事件
 
-### E、为main方法加入执行方法
+### 为main方法加入执行方法
 
 ```java
 private static JFrame _FrameMain;

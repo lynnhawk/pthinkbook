@@ -29,7 +29,7 @@ stop.sh ：linux环境下的 停止程序
 
 
 
-## 1、配置文件app.properties的参数说明
+## 配置文件app.properties的参数说明
 
 ```java
 
@@ -108,11 +108,11 @@ app.plugins=ehcache,mailer
 
 ```
 
-## 2、  配置文件 applicationContext .xml说明
+## 配置文件 applicationContext .xml说明
 
 该文件为spring配置文件，无需修改。
 
-## 3、配置文件db.properties说明
+## 配置文件db.properties说明
 
 数据库配置文件
 
@@ -160,7 +160,7 @@ hibernate.dialect=org.hibernate.dialect.MySQLDialect
 
 上述参数一般只需要修改粗体部分的内容即可。
 
-## 4、配置文件gen.properties
+## 配置文件gen.properties
 
 该文件为自动生成ActiveRecord对象的配置文件，配置内容如下：
 
@@ -200,7 +200,7 @@ tableNamePrefixes=t_
 
 ```
 
-## 5、配置文件logback.xml
+## 配置文件logback.xml
 
 该文件为logback的配置文件，配置内容如下：
 
@@ -248,7 +248,7 @@ tableNamePrefixes=t_
 
 
 
-## 6、邮件配置文件mail.properties
+## 邮件配置文件mail.properties
 
 邮件发送服务器的配置文件
 
