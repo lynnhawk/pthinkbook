@@ -4,7 +4,7 @@
 
 * 范例程序中表格显示采用的是jQuery 的DataTable控件，它在进行翻页时默认限制了服务端返回的json数据格式内容，因此我们在使用该控件时，需要在最后返回数据时调用clientapi中的DataTableUtil.getRetData进行二次加工后再输出即可正常工作。
 
-## 1、范例说明
+## 范例说明
 
 程序是基于jfinal的框架开发的，下载地址：[http:\/\/222.44.18.140\/svn\/pthink\/product\/PthinkCloudApp\/02.example\/02.client\/ExampleWeb](http://222.44.18.140/svn/pthink/product/PthinkCloudApp/02.example/02.client/ExampleWeb)
 
@@ -299,9 +299,9 @@
 
 ```
 
-## 2、完整的系统开发步骤
+## 完整的系统开发步骤
 
-### A）利用IDE或maven等类似工具新建一个web应用
+### 利用IDE或maven等类似工具新建一个web应用
 
 项目中引用了一个ClientAPI，可以直接通过maven 引入即可。
 
@@ -314,7 +314,7 @@
 
 ```
 
-### B）编写调用功能
+### 编写调用功能
 
 代码范例如下：
 
@@ -333,7 +333,7 @@ result就是后台返回的json数据，详细内容可看开头部分说明。
 类IceTradeUtil是向后台发送请求报文的工具类。
 AppConst.ICE\_Connection是一个ICE连接，一个应用只需要创建一个连接实例，如果断开则会自动重连。
 
-### C）编写展示页面功能
+### 编写展示页面功能
 
 范例代码如下
 
@@ -352,7 +352,7 @@ AppConst.ICE\_Connection是一个ICE连接，一个应用只需要创建一个�
 
 其中由于使用Jquery的 DataTable的原因，数据获取利用ajax方式进行提取。列表头也利用datatable的属性直接自动构建了，另外还翻译了DataTable的相关资源内容，直接展示为中文。
 
-### D）配置server.properties
+### 配置server.properties
 
 配置文件如下
 
@@ -383,7 +383,7 @@ packet\_pager是分页区模板
 packet\_params是参数区模板
 F\*\*\*（\*\*\*为后台已经开发好的功能号数字）是对应功能号的报文模板
 
-### E）编译发布
+### 编译发布
 
 利用maven或ide工具打包发布后部署到server中即可测试
 

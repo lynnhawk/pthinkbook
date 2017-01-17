@@ -1,6 +1,6 @@
 # 第二节 创建新的移动客户端
 
-## 1、范例程序说明
+## 范例程序说明
 
 程序采用ionic框架开发，可直接发布到iOS和android平台使用，开发过程中也可以通过浏览器直接进行测试。由于该框架是基于web服务的，所以并没有直接调用ClientAPI，而是调用了之前WebDemo中做好的Http RESTful请求。范例下载地址： [http:\/\/222.44.18.140\/svn\/pthink\/product\/PthinkCloudApp\/02.example\/02.client\/ExampleMobile](http://222.44.18.140/svn/pthink/product/PthinkCloudApp/02.example/02.client/ExampleMobile)
 
@@ -12,11 +12,11 @@
 
 ![](/assets/04.png)
 
-## 2、 完整的系统开发步骤
+## 完整的系统开发步骤
 
 安装相关文章网上很多，可以参看[http:\/\/www.runoob.com\/ionic\/ionic-install.html](http://www.runoob.com/ionic/ionic-install.html)
 
-### A、 准备开发环境
+### 准备开发环境
 
 到官网下载安装[NodeJS ](https://nodejs.org/)（4.x版本即可）
 
@@ -28,11 +28,11 @@ npm install -g cordova ionic
 
 ```
 
-### B、 创建初始工程
+### 创建初始工程
 
 ionic start appname  tabs
 
-### C、 修改相关js
+### 修改相关js
 
 #### app.js
 
@@ -113,13 +113,13 @@ angular.module('starter.services', ['ngResource']) .factory('Servers', function 
 
 ```
 
-### D、 编译发布
+### 编译发布
 
 本地浏览器测试：ionic  serve
 
 android 和iOS均要有相应的模拟器
 
-### E、测试
+### 测试
 
 如果需要在Linux后台利用ionic来进行测试，并且希望退出控制台后可以继续执行，需要利用screen来执行下面的操作
 
