@@ -2,13 +2,13 @@
     "plugins": [
         "-tbfed-pagefooter",
         "github",
-        "-theme-api",
+        "theme-default",
         "emphasize",
         "include-codeblock",
         "ace",
-        "-numbered-headings",
+        "numbered-headings",
         "-signature",
-        "theme-default"
+        "-theme-api"
     ],
     "pluginsConfig": {
         "fontSettings": {
