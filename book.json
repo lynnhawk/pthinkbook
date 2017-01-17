@@ -19,19 +19,6 @@
         "theme-default": {
              "showLevel": true
         },
-        "theme-api": {
-            "languages": [
-                {
-                    "lang": "js",
-                    "name": "JavaScript",
-                    "default": true
-                },
-                {
-                    "lang": "java",
-                    "name": "Java"
-                }
-            ]
-        },
         "github": {
             "url": "https://github.com/lynnhawk/pthinkbook.git"
         },
@@ -40,21 +27,6 @@
             "modify_label": "modified: ",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
-"-gitbook-plugin-signature":{
-"autoTimeStamp": { 
-"color":"gray", 
-"timeStampFormat": "YYYY-MM-DD HH:mm:ss" 
-}, 
-"autoCopyright":{ 
-"color":"gray", 
-"owner":"Hao", 
-"center":true 
-}, 
-"signature":{ 
-"key": "customized signature" 
-} 
-}
-
     },
     "author": "phy",
     "pdf": {
