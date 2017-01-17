@@ -16,6 +16,9 @@
             "family": "serif",
             "size": 1
         },
+        "theme-default": {
+             "showLevel": true
+        },
         "theme-api": {
             "languages": [
                 {
