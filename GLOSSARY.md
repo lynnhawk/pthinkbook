@@ -31,5 +31,5 @@ Business Unit，业务单元组件，单项业务的实现单元组件。
 
 ## 内部开发包的 API查询地址
 
-servercore  、commons的API手册请访问：[http:\/\/10.10.241.24:81\/cloudapp](http://10.10.241.24:81/cloudapp)
+servercore  、commons的API手册请访问：[http://10.10.241.24:81/cloudapp](http://10.10.241.24:81/cloudapp)
 
