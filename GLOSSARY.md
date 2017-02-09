@@ -24,20 +24,17 @@ Business Unit，业务单元组件，单项业务的实现单元组件。
 
 * Subversive插件（svn），下载地址为：[http://www.eclipse.org/subversive/downloads.php](http://www.eclipse.org/subversive/downloads.php)
 
-* TestNG 插件
-eclipse下载安装地址：http://testng.org/doc/index.html
-将下列地址拖入eclipse即可：
-http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=1549
-
+* TestNG 插件  
+  eclipse下载安装地址：[http://testng.org/doc/index.html](http://testng.org/doc/index.html)  
+  将下列地址拖入eclipse即可：  
+  [http://marketplace.eclipse.org/marketplace-client-intro?mpc\_install=1549](http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=1549)
 
 # IntelliJ IDEA
 
-开发工具。直接安装使用，可下载Communication的版本即可满足日常开发要求。
-如果下载的是Ulimited 版本，请使用Active Server方式来激活，server url： http://222.44.18.147:61001
+开发工具。直接安装使用，可下载Communication的版本即可满足日常开发要求。  
+如果下载的是Ultimate 版本，请使用Active Server方式来激活，server url： [http://222.44.18.147:61001](http://222.44.18.147:61001)
 
 ## 内部开发包的 API查询地址
 
 servercore  、commons的API手册请访问：[http://10.10.241.24:81/cloudapp](http://10.10.241.24:81/cloudapp)
-
-
 
