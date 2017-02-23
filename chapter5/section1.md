@@ -22,9 +22,9 @@ private static void getData() {
 }
 ```
 
+### 
+
 ### SQL  Server 查询树状菜单语句
-
-
 
 ```
 with CTE as    
@@ -47,8 +47,6 @@ union all
 select * from CTE  
 order by LTRIM(OrderID)
 ```
-
-
 
 
 
