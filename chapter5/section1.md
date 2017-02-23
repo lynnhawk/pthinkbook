@@ -22,53 +22,45 @@ private static void getData() {
 }
 ```
 
-
-
 ### SQL  Server 查询树状菜单语句
 
 
 
-\`\`\` sql
+`with CTE as    `
 
-with CTE as    
+`(     `
 
-\(     
+`-->Begin 一个定位点成员     `
 
---&gt;Begin 一个定位点成员     
+` select ID, Name,Parent,cast(Name as nvarchar(100)) as TE,  `
 
- select ID, Name,Parent,cast\(Name as nvarchar\(100\)\) as TE,  
+`        ROW_NUMBER()over(order by getdate()) as OrderID  `
 
-        ROW\_NUMBER\(\)over\(order by getdate\(\)\) as OrderID  
+`        --最关键是上面这个字段，要获取排序字段，按字符串来排序。  `
 
-        --最关键是上面这个字段，要获取排序字段，按字符串来排序。  
+`        --其中窗口函数必须要使用order by，但是不能用整型，那就用时间吧  `
 
-        --其中窗口函数必须要使用order by，但是不能用整型，那就用时间吧  
+`        from sys_resource where Parent='0' `
 
-        from sys\_resource where Parent='0' 
+`-->End      `
 
---&gt;End      
+`union all     `
 
-union all     
+`-->Begin一个递归成员     `
 
---&gt;Begin一个递归成员     
+` select sys_resource.ID, sys_resource.Name,sys_resource.Parent,cast(replicate(' ',len(CTE.TE))+'|_'+sys_resource.name as nvarchar(100)) as TE,  `
 
- select sys\_resource.ID, sys\_resource.Name,sys\_resource.Parent,cast\(replicate\(' ',len\(CTE.TE\)\)+'\|\_'+sys\_resource.name as nvarchar\(100\)\) as TE,  
+`        CTE.OrderID*100+ROW_NUMBER()over(Order by GETDATE()) as OrderID  `
 
-        CTE.OrderID\*100+ROW\_NUMBER\(\)over\(Order by GETDATE\(\)\) as OrderID  
+`        from sys_resource inner join CTE     `
 
-        from sys\_resource inner join CTE     
+`        on sys_resource.Parent=CTE.id     `
 
-        on sys\_resource.Parent=CTE.id     
+`-->End     `
 
---&gt;End     
+`)     `
 
-\)     
+`select * from CTE  `
 
-select \* from CTE  
-
-order by LTRIM\(OrderID\)
-
-\`\`\`
-
-
+`order by LTRIM(OrderID)`
 
